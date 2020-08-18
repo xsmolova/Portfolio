@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>Ing. Alexandra Smolová</title>
+
+    <!-- COLOR OF HEADER BAR -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#010101">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#010101">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#010101">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="site.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+        <svg height="30" width="30">
+            <circle cx="15" cy="15" r="15" stroke-width="0"></circle>
+        </svg>
+    </div>
+
+    <div class="cursor__ball cursor__ball--small">
+        <svg height="30" width="30">
+            <circle cx="15" cy="15" r="5" stroke-width="0"></circle>
+        </svg>
+    </div>
+</div>
+
+<!-- HEADER AND NAV -->
+<nav class="navbar navbar-expand-sm bg-transparent w-100 d-flex ">
+    <ul class="navbar-nav mr-auto flex-row">
+        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/facebook.svg" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/linkedin.svg" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/mail.svg" class="d-inline-block align-top icon" alt=""></a></li>
+    </ul>
+    <ul class="navbar-nav ml-auto flex-row">
+        <li class="nav-item p-auto"><a class="nav-link hoverable" href="#"><img src="icons/menu.svg" class="d-inline-block align-top icon" alt=""></a></li>
+    </ul>
+</nav>
+
+<!-- MAIN -->
+<main>
+    <!-- BANNER -->
+    <div class="banner">
+        <div class="banner-content">
+            <img class="d-block w-100" src="images/titlephoto.jpg" alt="Notebook and stationary on the table">
+            <div class="triangle"></div>
+            <div class="name-tag-circle">
+                <div>
+                    <h1 class="name-tag-circle__font">ALEXANDRA SMOLOVÁ</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT ME -->
+<!--
+        <section class="about-me" id="About">
+
+            <div class="my-photo">
+                <img src="images/jakruh.jpg" alt="My photo">
+            </div>
+            <p>
+                HI! <br>
+                My name is Alexandra and I got my masters degree at Faculty of Informatics and Information Technology  in Bratislava.
+                <br>
+                I love programming and I'm available for new exciting projects!
+            </p>
+
+        </section>
+    -->
+
+    <div class="viewport">
+        <div class="scroll-container">
+            <div class="content">
+                <div class="horizontal-scroll-wrapper">
+                    <div class="horizontal-scroll">
+                        <div class="single-item">
+                            <div data-depth-hor="-3" data-direction="left">
+                                <div class="single-item-content">
+                                    <div class="single-item-content__text">
+                                        <h1>01. E-shop</h1>
+                                        <h2>Sell Watches</h2>
+                                        <p>
+                                            Programming languages HTML5, CSS3, JS, PHP, Laravel framework <br>
+                                            As a semestral project I designed and programmed e-shop for selling watches. I made a couple more
+                                            webpages since.
+                                        </p>
+                                    </div>
+                                    <div class="single-item-content__image">
+                                        <img src="images/eshop.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <div data-depth-hor="-3" data-direction="left">
+                                <div class="single-item-content">
+                                    <div class="single-item-content__text">
+                                        <h1>02. Master Thesis</h1>
+                                        <h2>Driving simulator with Eyetracking</h2>
+                                        <p>
+                                            Programming language C#, Unity 3D, Tobii Eyetracker <br>
+                                            Analysis of driver behavior when distracted by
+                                            mobile communication using eye tracking.
+                                        </p>
+                                    </div>
+                                    <div class="single-item-content__image">
+                                        <img src="images/driving.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <div data-depth-hor="-3" data-direction="left">
+                                <div class="single-item-content">
+                                    <div class="single-item-content__text">
+                                        <h1>03. Bachelor thesis</h1>
+                                        <h2>StellAR - Augmented Reality in E-learning</h2>
+                                        <p>
+                                            Programming language C#, Unity 3D, Vuforia <br>
+                                            StellAR is a educational mobile application that uses technology of augmented reality
+                                            to bring the whole solar system to your livingroom!
+                                        </p>
+                                    </div>
+                                    <div class="single-item-content__image">
+                                        <img src="images/moon.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <div data-depth-hor="-3" data-direction="left">
+                                <div class="single-item-content">
+                                    <div class="single-item-content__text">
+                                        <h1>04. MOTH</h1>
+                                        <h2>Indie Game</h2>
+                                        <p>
+                                            Programming language C#, Unity 3D <br>
+                                            Cryptid hunt! Survive an encounter with the famous Mothman and bring home a photo as proof.
+                                            Game created as a semestral project for Game Development course at Faculty of Informatics and Information Technologies of Slovak University of Technology in Bratislava.
+                                        </p>
+                                    </div>
+                                    <div class="single-item-content__image">
+                                        <img src="images/moth.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <div data-depth-hor="-3" data-direction="left">
+                                <div class="single-item-content">
+                                    <div class="single-item-content__text">
+                                        <h1>05. Neuroevolution for Flappy Bird</h1>
+                                        <h2>Neural networks optimized with genetic algorithm</h2>
+                                        <p>
+                                            Programming languages HTML5, CSS3, JS, PHP, Laravel framework <br>
+                                            As a semestral project I designed and programmed e-shop for selling watches. I made a couple more
+                                            webpages since.
+                                        </p>
+                                    </div>
+                                    <div class="single-item-content__image">
+                                        <img src="images/str.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Static image
+    <div class="fixed-background-image">
+        <div class="fixed-background-image-caption">
+            <h2>
+                <a href="#">
+                    FIND YOUR STYLE!
+                </a>
+            </h2>
+        </div>
+    </div>-->
+
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <section class="contact" id="Contact">
+        <div>
+
+        </div>
+    </section>
+
+</footer>
+
+
+
+
+
+
+<!-- SCRIPTS -->
+<script src="site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+<script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
+
