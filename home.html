@@ -54,19 +54,29 @@
     <!-- BANNER -->
     <div class="banner">
         <div class="banner-content">
-           <div class="triangle"></div>
+           <div class="triangle triangle--right"></div>
            <div class="banner-content__text--left">
-               <p>HELLO! My name is</p>
-               <h1>Ing. Alexandra Smolová</h1>
+               <p data-aos="flip-up"  data-aos-duration="2000">HELLO! My name is</p>
+               <h1 data-aos="fade-up"  data-aos-duration="3000">Ing. Alexandra Smolová</h1>
            </div>
            <div class="banner-content__text--right">
-               <p>I'm a software developer. I love to code and design applications and I'm availible for new exciting projects!               </p>
+               <p data-aos="fade-left"
+                  data-aos-delay="2000"
+                  data-aos-duration="1000">
+                   I'm a software developer. I love to code and design applications and I'm availible for new exciting projects!
+               </p>
                <div>
-                   <button type="button" class="btn btn-lg btn-primary">HIRE ME!</button>
+                   <button  data-aos="fade-left"
+                            data-aos-delay="3000"
+                            data-aos-duration="1000"
+                            type="button" class="btn btn-lg btn-primary hoverable">
+                       HIRE ME!
+                   </button>
                </div>
            </div>
            <div class="banner-content__photo">
-               <img src="images/photo.png" alt="My photo">
+               <img data-aos="fade-up"
+                    data-aos-duration="3000"src="images/photo1.png" alt="My photo">
            </div>
         </div>
     </div>
@@ -90,7 +100,7 @@
 
     <div class="viewport">
         <div class="scroll-container">
-            <div class="content">
+            <div class="content"><h1 class="projects-background-text">PROJECTS</h1>
                 <div class="horizontal-scroll-wrapper">
                     <div class="horizontal-scroll">
                         <div class="single-item">
@@ -183,15 +193,12 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+
 
     <!-- Static image
     <div class="fixed-background-image">
@@ -203,13 +210,17 @@
             </h2>
         </div>
     </div>-->
-
 </main>
 
 <!-- FOOTER -->
-<footer>
-        <img class="d-block w-100" src="images/titlephoto.jpg" alt="Notebook and stationary on the table">
-
+<footer class="footer">
+            <div class="footer-text">
+                <h1>Start by</h1>
+                <h1 class="footer-text__big">SAYING HELLO!</h1>
+                <p>
+                    smolova.alexandra@gmail.com
+                </p>
+            </div>
 </footer>
 
 
