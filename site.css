@@ -33,6 +33,7 @@ a{
 .cursor__ball--big circle {
     fill: darkgrey;
 }
+
 .hidden{display: none;}
 .icon{
     width: 20px;
@@ -74,7 +75,11 @@ a{
     top: 0;
     background: linear-gradient(to left top, #f6b3b3 50%, transparent 50%);
 }
-
+.triangle--left{
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right top, #261c1c 50%, transparent 50%);
+}
 
 .banner-content__photo{
     width:100vw;
@@ -117,6 +122,8 @@ a{
     height: auto;
     padding: 0 0.5em 0 0.5em;
     background-color: #6a4d4d;
+    color:#f0cfcf;
+    border-radius: 2%;
 }
 
 .banner-content__text p{
@@ -137,51 +144,15 @@ a{
 
 }
 .btn-primary {
-    color: #111111;
-    background-color: white;
-    border: white;
+    color: white;
+    background-color: #111111;
+    border: solid #6a4d4d 3px;
 }
 .btn-primary:hover{
-    background-color: #6a4d4d;
     color: white;
+    background-color: #6a4d4d;
+    border: solid #6a4d4d 3px;
 }
-
-.name-tag-circle div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    position: relative;
-
-    animation: scale 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -10s);
-
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-}
-
-.name-tag-circle__font{
-    position: relative;
-    top:0;
-    text-align: center;
-
-    font-size: 10vw;
-    line-height: 10vw;
-    flex-wrap: wrap;
-}
-
-@keyframes scale {
-    from{
-        opacity:1;
-    }
-    to {
-        transform: scale(5);
-        opacity:0;
-    }
-}
-
-
 
 /*FIXED BACKGROUND IMAGE*/
 .fixed-background-image  {
@@ -363,25 +334,49 @@ a{
 }
 .footer{
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 50vh;
-    margin: 0;
     bottom:-50vh;
+    color: white;
     z-index: 2;
+
 }
-.footer-text{
-    padding-left: 5%;
-    padding-top: 10%;
+.footer-content{
+    position: relative;
+}
+.footer-text h1{
+    padding-top: 5%;
+    text-align: center;
     font-weight: bold;
+    color: white;
+    font-size: 5vw;
 }
-.footer-text__big{
-    font-size: 12vw;
-    wrap-option: wrap-break;
-    max-width: 100vw;
-    overflow: hidden;
-    color: #c28d8d;
+.footer-span{
+    position: relative;
+    width:100%;
+    height: auto;
 }
-.footer-text p{
-    padding-top: 2%;
-    padding-bottom: 10%;
+
+.circle{
+    width: 7vw;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 50%;
+    border: dotted white;
+    background-color: #111111;
+    margin: auto;
+    left:0;
+    right: 0;
+    justify-content: center;
+}
+.circle:hover{
+    background-color: #261c1c;
+
+}
+
+.arrow{
+    width: 20%;
+    height: 20%;
 }
