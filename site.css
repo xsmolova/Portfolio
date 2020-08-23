@@ -74,47 +74,44 @@ a{
     top: 0;
     background: linear-gradient(to left top, #f6b3b3 50%, transparent 50%);
 }
-.triangle--left{
-    left: 0;
-    top: 0;
-    background: linear-gradient(to right top, #f6b3b3 50%, transparent 50%);
-}
 
 
 .banner-content__photo{
     width:100vw;
     height: 100%;
+    overflow: visible;
 }
 .banner-content__photo img{
-    width: 35vw;
+    width: 37vw;
     height: auto;
     position: absolute;
     margin: auto;
-    left:0;
     bottom: 0;
-    right: 0;
+    right: 10vw;
+
 }
 
 .banner-content__text--left{
-    width: 50%;
+    width: 60%;
     height: 100%;
     float:left;
     position: relative;
-    padding-top: 17%;
-    padding-left: 5%;
+    padding-top: 12%;
+    padding-left: 10%;
 }
 .banner-content__text--left h1{
     text-transform: uppercase;
     font-weight: bold;
     wrap-option: wrap;
-    width:80%;
-    font-size: 3.7vw;
+    width:100%;
+    font-size: 4vw;
     line-height: 4vw;
     margin-top: 2%;
 }
 
-.banner-content__text--left p{
-    font-size: 2vw;
+.banner-content__text--left>p{
+    font-size: 1.7vw;
+    font-weight: bold;
     width: auto;
     display: inline-block;
     height: auto;
@@ -122,41 +119,31 @@ a{
     background-color: #6a4d4d;
 }
 
-.banner-content__text--right{
-    width: 50%;
-    height: 100%;
-    float:right;
-    position: relative;
-    padding-top: calc(19% + 3vw);
-    padding-right: 5%;
-}
-.banner-content__text--right p{
+.banner-content__text p{
+    margin-top: 3%;
     wrap-option: wrap;
-    width: 60%;
-    float: right;
-    font-size: large;
-    text-align: justify;
-    font-weight: bold;
-}
-.banner-content__text--right div{
-    text-align: center;
-    width: 60%;
-    float: right;
-}
-.banner-content__text--right button{
     width: 50%;
-    margin-top: 2em;
+    text-align: justify;
+
+}
+.banner-content__text div{
+    text-align: left;
+    width: 60%;
+}
+.banner-content__text button{
+    width: 50%;
+    margin-top: 2%;
     font-weight: bold;
 
 }
 .btn-primary {
-    color: #fff;
-    background-color: #111111;
-    border: #111111;
+    color: #111111;
+    background-color: white;
+    border: white;
 }
 .btn-primary:hover{
-    background-color: white;
-    color: #111111;
+    background-color: #6a4d4d;
+    color: white;
 }
 
 .name-tag-circle div {
