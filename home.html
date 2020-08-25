@@ -20,7 +20,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="site.css" rel="stylesheet">
 </head>
-<body>
+<body class="body__black">
 
 <!-- Cursor -->
 <div class="cursor">
@@ -55,9 +55,9 @@
 <main>
     <!-- BANNER -->
     <div class="banner">
-        <div class="banner-content">
-           <div class="triangle triangle--right"></div>
-           <div class="banner-content__text--left">
+        <div class="banner-content" id="js-banner">
+           <div data-speed="2" class="layer triangle triangle--right"></div>
+           <div data-speed="-1" class="layer banner-content__text--left">
                <p >HELLO! My name is</p>
                <h1 >Ing. Alexandra Smolová</h1>
                <div class="banner-content__text">
@@ -66,14 +66,14 @@
                    </p>
                    <div>
                        <button
-                                type="button" class="btn btn-lg btn-primary hoverable">
+                                type="button" class=" btn-lg button hoverable">
                            HIRE ME!
                        </button>
                    </div>
                </div>
            </div>
-           <div class="banner-content__photo">
-               <img src="images/photo1.png" alt="My photo">
+           <div data-speed="-1"class=" layer banner-content__photo">
+               <img  src="images/photo1.png" alt="My photo">
            </div>
         </div>
     </div>
@@ -122,34 +122,16 @@
                             <div data-depth-hor="-3" data-direction="left">
                                 <div class="single-item-content">
                                     <div class="single-item-content__text">
-                                        <h1>02. Master Thesis</h1>
-                                        <h2>Driving simulator with Eyetracking</h2>
+                                        <h1>05. Neuroevolution for Flappy Bird</h1>
+                                        <h2>Neural networks optimized with genetic algorithm</h2>
                                         <p>
-                                            Programming language C#, Unity 3D, Tobii Eyetracker <br>
-                                            Analysis of driver behavior when distracted by
-                                            mobile communication using eye tracking.
+                                            Programming languages HTML5, CSS3, JS, PHP, Laravel framework <br>
+                                            As a semestral project I designed and programmed e-shop for selling watches. I made a couple more
+                                            webpages since.
                                         </p>
                                     </div>
                                     <div class="single-item-content__image">
-                                        <img src="images/driving.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <div data-depth-hor="-3" data-direction="left">
-                                <div class="single-item-content">
-                                    <div class="single-item-content__text">
-                                        <h1>03. Bachelor thesis</h1>
-                                        <h2>StellAR - Augmented Reality in E-learning</h2>
-                                        <p>
-                                            Programming language C#, Unity 3D, Vuforia <br>
-                                            StellAR is a educational mobile application that uses technology of augmented reality
-                                            to bring the whole solar system to your livingroom!
-                                        </p>
-                                    </div>
-                                    <div class="single-item-content__image">
-                                        <img src="images/moon.jpg" alt="">
+                                        <img src="images/str.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +149,7 @@
                                         </p>
                                     </div>
                                     <div class="single-item-content__image">
-                                        <img src="images/moth.jpg" alt="">
+                                        <img src="images/moth1.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -176,20 +158,39 @@
                             <div data-depth-hor="-3" data-direction="left">
                                 <div class="single-item-content">
                                     <div class="single-item-content__text">
-                                        <h1>05. Neuroevolution for Flappy Bird</h1>
-                                        <h2>Neural networks optimized with genetic algorithm</h2>
+                                        <h1>02. Master Thesis</h1>
+                                        <h2>Driving simulator with Eyetracking</h2>
                                         <p>
-                                            Programming languages HTML5, CSS3, JS, PHP, Laravel framework <br>
-                                            As a semestral project I designed and programmed e-shop for selling watches. I made a couple more
-                                            webpages since.
+                                            Programming language C#, Unity 3D, Tobii Eyetracker <br>
+                                            Analysis of driver behavior when distracted by
+                                            mobile communication using eye tracking.
                                         </p>
                                     </div>
                                     <div class="single-item-content__image">
-                                        <img src="images/str.png" alt="">
+                                        <img src="images/auto4.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="single-item">
+                            <div data-depth-hor="-3" data-direction="left">
+                                <div class="single-item-content">
+                                    <div class="single-item-content__text">
+                                        <h1>03. Bachelor thesis</h1>
+                                        <h2>StellAR - Augmented Reality in E-learning</h2>
+                                        <p>
+                                            Programming language C#, Unity 3D, Vuforia <br>
+                                            StellAR is a educational mobile application that uses technology of augmented reality
+                                            to bring the whole solar system to your livingroom!
+                                        </p>
+                                    </div>
+                                    <div class="single-item-content__image">
+                                        <img src="images/stellar.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -216,7 +217,7 @@
         <div class="footer-text">
             <h1>Did you like my work?</h1>
         </div>
-        <div class="footer-span"><div class="circle hoverable"><img src="icons/up-arrow.svg" class="arrow" alt=""></div></div>
+        <div class="footer-span"><a href="#top"><div class="circle hoverable"><img src="icons/up-arrow.svg" class="arrow" alt=""></div></a></div>
     </div>
 </footer>
 

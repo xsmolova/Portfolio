@@ -1,15 +1,23 @@
+html{scroll-behavior: smooth;}
 body {
-    background: #111111;
     cursor: none;
     margin: 0;
     display: flex;
     font-family: 'Neutrif-Pro', sans-serif;
     letter-spacing: -0.036em;
-    color: white;
     overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
 }
+.body__black{
+    background: #111111;
+    color: white;
+}
+.body__white{
+    background: whitesmoke;
+    color: black;
+}
+.body__white .icon{fill:black !important;}
 a{
     cursor:none;
 }
@@ -101,8 +109,9 @@ a{
     height: 100%;
     float:left;
     position: relative;
-    padding-top: 12%;
+    padding-top: 10%;
     padding-left: 10%;
+    z-index: 3;
 }
 .banner-content__text--left h1{
     text-transform: uppercase;
@@ -143,15 +152,21 @@ a{
     font-weight: bold;
 
 }
-.btn-primary {
+.button {
     color: white;
     background-color: #111111;
-    border: solid #6a4d4d 3px;
+    border: solid #6a4d4d 2px;
 }
-.btn-primary:hover{
+.button:hover{
     color: white;
     background-color: #6a4d4d;
-    border: solid #6a4d4d 3px;
+    border: solid #6a4d4d 2px;
+}
+.button:focus, .button:active, .button:visited{
+    color: white;
+    background-color: #261c1c;
+    border: solid #261c1c 2px;
+    box-shadow: none;
 }
 
 /*FIXED BACKGROUND IMAGE*/
@@ -353,6 +368,7 @@ a{
 }
 .footer-span{
     position: relative;
+    margin-top: 2%;
     width:100%;
     height: auto;
 }

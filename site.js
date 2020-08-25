@@ -321,3 +321,22 @@ function getScrollbarSize() {
     document.body.removeChild(div);
     return size;
 }
+
+document.addEventListener('mousemove', parallax);
+var banner = document.getElementById("js-banner")
+var mouseOverBanner = false
+banner.addEventListener('mouseenter', function () {mouseOverBanner=true});
+banner.addEventListener('mouseleave', function () {mouseOverBanner=false});
+
+function parallax(e) {
+    this.querySelectorAll('.layer').forEach(layer=>{
+        var speed = layer.getAttribute('data-speed')
+
+        if(mouseOverBanner){
+            var x = (window.innerWidth - e.pageX * speed)/100
+            var y = (window.innerWidth - e.pageY * speed)/100
+            layer.style.transform= 'translateX('+ x +'px) translateY('+ y + 'px)'
+        }
+    })
+
+}
