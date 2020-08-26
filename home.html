@@ -42,12 +42,12 @@
 <!-- HEADER AND NAV -->
 <nav class="navbar navbar-expand-sm bg-transparent w-100 d-flex ">
     <ul class="navbar-nav mr-auto flex-row">
-        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/facebook.svg" class="d-inline-block align-top icon" alt=""></a></li>
-        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/linkedin.svg" class="d-inline-block align-top icon" alt=""></a></li>
-        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/mail.svg" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/facebook.png" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/linkedin.png" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/email.png" class="d-inline-block align-top icon" alt=""></a></li>
     </ul>
     <ul class="navbar-nav ml-auto flex-row">
-        <li class="nav-item p-auto"><a class="nav-link hoverable" href="#"><img src="icons/menu.svg" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="nav-item p-auto"><a class="nav-link hoverable" href="#"><img src="icons/menu.png" class="d-inline-block align-top icon" alt=""></a></li>
     </ul>
 </nav>
 
@@ -58,21 +58,21 @@
         <div class="banner-content" id="js-banner">
            <div data-speed="2" class="layer triangle triangle--right"></div>
            <div data-speed="-1" class="layer banner-content__text--left">
-               <p >HELLO! My name is</p>
-               <h1 >Ing. Alexandra Smolová</h1>
+               <p data-aos="flip-up" data-aos-duration="800">HELLO! My name is</p>
+               <h1 data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">Ing. Alexandra Smolová</h1>
                <div class="banner-content__text">
-                   <p >
+                   <p data-aos="fade-up" data-aos-delay="1400" data-aos-duration="700" >
                        I'm a software developer. I love to code and design applications and I'm availible for new exciting projects!
                    </p>
                    <div>
-                       <button
+                       <button data-aos="zoom-in"  data-aos-delay="2100" data-aos-duration="700"
                                 type="button" class=" btn-lg button hoverable">
                            HIRE ME!
                        </button>
                    </div>
                </div>
            </div>
-           <div data-speed="-1"class=" layer banner-content__photo">
+           <div data-speed="-1" class=" layer banner-content__photo">
                <img  src="images/photo1.png" alt="My photo">
            </div>
         </div>
@@ -97,16 +97,16 @@
 
     <div class="viewport">
         <div class="scroll-container">
-            <div class="content"><h1 class="projects-background-text">PROJECTS</h1>
+            <div class="content"><h1 data-aos="zoom-in" class="projects-background-text">PROJECTS</h1>
                 <div class="horizontal-scroll-wrapper">
                     <div class="horizontal-scroll">
                         <div class="single-item">
                             <div data-depth-hor="-3" data-direction="left">
                                 <div class="single-item-content">
                                     <div class="single-item-content__text">
-                                        <h1>01. E-shop</h1>
-                                        <h2>Sell Watches</h2>
-                                        <p>
+                                        <h1 data-aos="fade-up" data-aos-duration="700">01. E-shop</h1>
+                                        <h2 data-aos="fade-up" data-aos-duration="700" data-aos-delay="350">Sell Watches</h2>
+                                        <p data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
                                             Programming languages HTML5, CSS3, JS, PHP, Laravel framework <br>
                                             As a semestral project I designed and programmed e-shop for selling watches. I made a couple more
                                             webpages since.
@@ -121,9 +121,13 @@
                         <div class="single-item">
                             <div data-depth-hor="-3" data-direction="left">
                                 <div class="single-item-content">
-                                    <div class="single-item-content__text">
-                                        <h1>05. Neuroevolution for Flappy Bird</h1>
-                                        <h2>Neural networks optimized with genetic algorithm</h2>
+                                    <div class="single-item-content__text" id="trigger-item2">
+                                        <h1>
+                                            02. Neuroevolution for Flappy Bird
+                                        </h1>
+                                        <h2>
+                                            Neural networks optimized with genetic algorithm
+                                        </h2>
                                         <p>
                                             Programming languages HTML5, CSS3, JS, PHP, Laravel framework <br>
                                             As a semestral project I designed and programmed e-shop for selling watches. I made a couple more
@@ -138,28 +142,14 @@
                         </div>
                         <div class="single-item">
                             <div data-depth-hor="-3" data-direction="left">
-                                <div class="single-item-content">
-                                    <div class="single-item-content__text">
-                                        <h1>04. MOTH</h1>
-                                        <h2>Indie Game</h2>
-                                        <p>
-                                            Programming language C#, Unity 3D <br>
-                                            Cryptid hunt! Survive an encounter with the famous Mothman and bring home a photo as proof.
-                                            Game created as a semestral project for Game Development course at Faculty of Informatics and Information Technologies of Slovak University of Technology in Bratislava.
-                                        </p>
-                                    </div>
-                                    <div class="single-item-content__image">
-                                        <img src="images/moth1.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <div data-depth-hor="-3" data-direction="left">
-                                <div class="single-item-content">
-                                    <div class="single-item-content__text">
-                                        <h1>02. Master Thesis</h1>
-                                        <h2>Driving simulator with Eyetracking</h2>
+                                <div class="single-item-content" >
+                                    <div class="single-item-content__text" id="trigger-item3">
+                                        <h1>
+                                            03. Master Thesis
+                                        </h1>
+                                        <h2>
+                                            Driving simulator with Eyetracking
+                                        </h2>
                                         <p>
                                             Programming language C#, Unity 3D, Tobii Eyetracker <br>
                                             Analysis of driver behavior when distracted by
@@ -176,7 +166,7 @@
                             <div data-depth-hor="-3" data-direction="left">
                                 <div class="single-item-content">
                                     <div class="single-item-content__text">
-                                        <h1>03. Bachelor thesis</h1>
+                                        <h1>04. Bachelor thesis</h1>
                                         <h2>StellAR - Augmented Reality in E-learning</h2>
                                         <p>
                                             Programming language C#, Unity 3D, Vuforia <br>
@@ -186,6 +176,24 @@
                                     </div>
                                     <div class="single-item-content__image">
                                         <img src="images/stellar.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item">
+                            <div data-depth-hor="-3" data-direction="left">
+                                <div class="single-item-content">
+                                    <div class="single-item-content__text">
+                                        <h1>05. MOTH</h1>
+                                        <h2>Indie Game</h2>
+                                        <p>
+                                            Programming language C#, Unity 3D <br>
+                                            Cryptid hunt! Survive an encounter with the famous Mothman and bring home a photo as proof.
+                                            Game created as a semestral project for Game Development course at Faculty of Informatics and Information Technologies of Slovak University of Technology in Bratislava.
+                                        </p>
+                                    </div>
+                                    <div class="single-item-content__image">
+                                        <img src="images/moth1.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -209,6 +217,9 @@
         </div>
     </div>-->
 </main>
+
+
+
 
 <!-- FOOTER -->
 <footer class="footer">

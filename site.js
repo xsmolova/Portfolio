@@ -303,6 +303,7 @@ document.documentElement.style.setProperty(
     getScrollbarSize() + "px"
 );
 
+if(document.querySelector(".horizontal-scroll")!=null){
 var scroller = new SmoothScroll({
     // scrollBody: document.querySelector(".scroll-content"),
     // scrollSpacer: document.querySelector(".spacer"),
@@ -310,7 +311,7 @@ var scroller = new SmoothScroll({
     scrollEase: 0.2,
     horizontalScrollWrapper: document.querySelector(".horizontal-scroll-wrapper"),
     horizontalScrollTarget: document.querySelector(".horizontal-scroll")
-});
+});}
 
 
 function getScrollbarSize() {
@@ -323,11 +324,27 @@ function getScrollbarSize() {
 }
 
 document.addEventListener('mousemove', parallax);
-var banner = document.getElementById("js-banner")
-var mouseOverBanner = false
-banner.addEventListener('mouseenter', function () {mouseOverBanner=true});
-banner.addEventListener('mouseleave', function () {mouseOverBanner=false});
 
+var banner = document.getElementById("js-banner")
+var bannerProjects = document.getElementById("js-banner-projects");
+var mouseOverBanner = false
+
+if(banner!=null) {
+    banner.addEventListener('mouseenter', function () {
+        mouseOverBanner = true
+    });
+    banner.addEventListener('mouseleave', function () {
+        mouseOverBanner = false
+    });
+}
+if(bannerProjects!=null) {
+    bannerProjects.addEventListener('mouseenter', function () {
+        mouseOverBanner = true
+    });
+    bannerProjects.addEventListener('mouseleave', function () {
+        mouseOverBanner = false
+    });
+}
 function parallax(e) {
     this.querySelectorAll('.layer').forEach(layer=>{
         var speed = layer.getAttribute('data-speed')
@@ -340,3 +357,4 @@ function parallax(e) {
     })
 
 }
+

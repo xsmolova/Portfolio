@@ -10,7 +10,7 @@ body {
     position: relative;
 }
 .body__black{
-    background: #111111;
+    background: #0f0f12;
     color: white;
 }
 .body__white{
@@ -36,7 +36,7 @@ a{
     z-index: 1000;
 }
 .cursor__ball--small circle {
-    fill: #f6b3b3;
+    fill: #335c67;
 }
 .cursor__ball--big circle {
     fill: darkgrey;
@@ -56,12 +56,7 @@ a{
     display: block;
 }
 
-.navbar img{
-    color: white;
-}
-
 .banner{
-    background-color: #111111;
     height: auto;
 }
 .banner-content{
@@ -74,19 +69,27 @@ a{
 }
 .triangle{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.3;
+    width: 150%;
+    height: 150%;
+    opacity: 0.9;
 }
 .triangle--right{
     right: 0;
     top: 0;
-    background: linear-gradient(to left top, #f6b3b3 50%, transparent 50%);
+    background: linear-gradient(to left top, #e09f3e 50%, transparent 50%);
 }
 .triangle--left{
     left: 0;
     top: 0;
-    background: linear-gradient(to right top, #261c1c 50%, transparent 50%);
+    background: linear-gradient(to right top, #323232 50%, transparent 50%);
+    width: 100%;
+    height: 100%;
+}
+.triangle--left-top{
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right bottom, #1e4042 50%, transparent 50%);
+
 }
 
 .banner-content__photo{
@@ -101,7 +104,8 @@ a{
     margin: auto;
     bottom: 0;
     right: 10vw;
-
+    -webkit-filter: drop-shadow(10px 10px 10px #0f0f12);
+    filter: drop-shadow(10px 10px 10px #0f0f12);
 }
 
 .banner-content__text--left{
@@ -130,8 +134,8 @@ a{
     display: inline-block;
     height: auto;
     padding: 0 0.5em 0 0.5em;
-    background-color: #6a4d4d;
-    color:#f0cfcf;
+    background-color: #e09f3e;
+    color: white;
     border-radius: 2%;
 }
 
@@ -152,15 +156,31 @@ a{
     font-weight: bold;
 
 }
+.project-title{
+    width: 100vw;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.project-title h1{
+    font-size: 17vw;
+    max-width: 100vw;
+    wrap-option: wrap-break;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
 .button {
     color: white;
-    background-color: #111111;
-    border: solid #6a4d4d 2px;
+    background-color: transparent;
+    border: solid #e09f3e 2px;
 }
 .button:hover{
     color: white;
-    background-color: #6a4d4d;
-    border: solid #6a4d4d 2px;
+    background-color: #e09f3e;
+    border: solid #e09f3e 2px;
 }
 .button:focus, .button:active, .button:visited{
     color: white;
@@ -212,7 +232,7 @@ a{
     wrap-option: wrap-break;
     overflow: hidden;
     text-align: center;
-    color: #261c1c;
+    color: #323232;
 }
 
 .viewport {
@@ -274,6 +294,7 @@ a{
 }
 .horizontal-scroll {
     display: flex;
+
 }
 .horizontal-scroll .single-item {
     flex: 0 0 100vw;
@@ -293,7 +314,7 @@ a{
     width: 50%;
     height: 60%;
     float: left;
-    border-left: solid #c28d8d 1px;
+    border-left: solid #e09f3e 1px;
 
 }
 .single-item-content__text h1{
@@ -302,7 +323,7 @@ a{
     letter-spacing: 0.2em;
     font-size: 30%;
     font-weight: bold;
-    color: #c28d8d;
+    color: #e09f3e;
 }
 .single-item-content__text h2{
     width: 90%;
@@ -350,6 +371,7 @@ a{
 .footer{
     position: absolute;
     width: 100vw;
+    max-width: 100vw;
     height: 50vh;
     bottom:-50vh;
     color: white;
@@ -380,19 +402,49 @@ a{
     align-items: center;
     position: absolute;
     border-radius: 50%;
-    border: dotted white;
-    background-color: #111111;
+    border: solid #e09f3e;
+    background-color: #0f0f12;
     margin: auto;
     left:0;
     right: 0;
     justify-content: center;
 }
 .circle:hover{
-    background-color: #261c1c;
-
+    background-color: #e09f3e;
+    opacity: 0.7;
 }
 
 .arrow{
     width: 20%;
     height: 20%;
 }
+
+.project-about-text{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+
+}
+.project-about-text p{
+    width: 70%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    left:0;
+    right: 0;
+    margin: auto;
+}
+.screenshots{
+    max-width: 100vw;
+    display: inline-block;
+    text-align: center;
+}
+.screenshots img{
+    max-width: 95vw;
+    margin-bottom: 10%;
+    -webkit-box-shadow: 10px 21px 33px -4px rgba(94,94,94,0.69);
+    -moz-box-shadow: 10px 21px 33px -4px rgba(94,94,94,0.69);
+    box-shadow: 10px 21px 33px -4px rgba(94,94,94,0.69);
+}
+
+
