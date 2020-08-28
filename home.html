@@ -42,12 +42,12 @@
 <!-- HEADER AND NAV -->
 <nav class="navbar navbar-expand-sm bg-transparent w-100 d-flex ">
     <ul class="navbar-nav mr-auto flex-row">
-        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/facebook.png" class="d-inline-block align-top icon" alt=""></a></li>
-        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/linkedin.png" class="d-inline-block align-top icon" alt=""></a></li>
-        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/email.png" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="ml-3 nav-item"><a class="nav-link hoverable" href="#"><img src="icons/facebook.svg" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/linkedin.svg" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/mail.svg" class="d-inline-block align-top icon" alt=""></a></li>
     </ul>
     <ul class="navbar-nav ml-auto flex-row">
-        <li class="nav-item p-auto"><a class="nav-link hoverable" href="#"><img src="icons/menu.png" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="mr-3 nav-item p-auto"><a class="nav-link hoverable" href="#"><img src="icons/menu.svg" class="d-inline-block align-top icon" alt=""></a></li>
     </ul>
 </nav>
 
@@ -56,8 +56,8 @@
     <!-- BANNER -->
     <div class="banner">
         <div class="banner-content" id="js-banner">
-           <div data-speed="2" class="layer triangle triangle--right"></div>
-           <div data-speed="-1" class="layer banner-content__text--left">
+           <div class="triangle triangle--right"></div>
+           <div data-speed="-1" class="banner-content__text--left">
                <p data-aos="flip-up" data-aos-duration="800">HELLO! My name is</p>
                <h1 data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">Ing. Alexandra Smolová</h1>
                <div class="banner-content__text">
@@ -72,29 +72,54 @@
                    </div>
                </div>
            </div>
-           <div data-speed="-1" class=" layer banner-content__photo">
-               <img  src="images/photo1.png" alt="My photo">
+           <h1 data-aos="fade-up" data-aos-duration="800" class="banner__background-text">DEVELOPER</h1>
+           <div data-speed="-1" class=" banner-content__photo">
+               <img data-aos="fade-left" data-aos-duration="2800" src="images/photo1.png" alt="My photo">
            </div>
         </div>
     </div>
 
     <!-- ABOUT ME -->
-<!--
-        <section class="about-me" id="About">
+    <section class="about-me">
+        <div class="rectangle--white">
+            <div class="interests-wrapper">
 
-            <div class="my-photo">
-                <img src="images/jakruh.jpg" alt="My photo">
+                <div class="interest" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="circle"><img src="icons/paint%20(1).svg" class="icon--big" alt=""></div>
+                    <h1>Design</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut </p>
+                </div>
+                <div class="interest" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="circle"><img src="icons/programming.svg" class="icon--big" alt=""></div>
+                    <h1>Code</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut </p>
+                </div>
+                <div class="interest" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="circle"><img src="icons/plane.svg" class="icon--big" alt=""></div>
+                    <h1>Travel</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut </p>
+                </div>
             </div>
-            <p>
-                HI! <br>
-                My name is Alexandra and I got my masters degree at Faculty of Informatics and Information Technology  in Bratislava.
-                <br>
-                I love programming and I'm available for new exciting projects!
-            </p>
+        </div>
+    </section>
 
-        </section>
-    -->
 
+
+        <div class="fixed-background">
+            <div class="fixed-background__image">
+                <div class="fixed-background__image--opacity"></div>
+                <div class="fixed-background__caption">
+                    <h2>
+                        Check out my resume!
+                    </h2>
+                    <button class=" btn-lg button hoverable">
+                        <a href="files/zivotopis.pdf" target="_blank" >Download pdf</a>
+                    </button>
+                    </div>
+            </div>
+
+
+<div class="hor-scroll-container">
     <div class="viewport">
         <div class="scroll-container">
             <div class="content"><h1 data-aos="zoom-in" class="projects-background-text">PROJECTS</h1>
@@ -204,18 +229,9 @@
             </div>
         </div>
     </div>
+</div>
 
 
-    <!-- Static image
-    <div class="fixed-background-image">
-        <div class="fixed-background-image-caption">
-            <h2>
-                <a href="#">
-                    FIND YOUR STYLE!
-                </a>
-            </h2>
-        </div>
-    </div>-->
 </main>
 
 
