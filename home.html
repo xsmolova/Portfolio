@@ -56,24 +56,25 @@
     <!-- BANNER -->
     <div class="banner">
         <div class="banner-content" id="js-banner">
-           <div class="triangle triangle--right"></div>
-           <div data-speed="-1" class="banner-content__text--left">
+           <div class="split-right triangle triangle--right"></div>
+           <div data-speed="-1" class="split-left banner-content__text--left">
                <p data-aos="flip-up" data-aos-duration="800">HELLO! My name is</p>
-               <h1 data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">Ing. Alexandra Smolová</h1>
+               <h1 id="trigger-interests" data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">Ing. Alexandra Smolová</h1>
                <div class="banner-content__text">
                    <p data-aos="fade-up" data-aos-delay="1400" data-aos-duration="700" >
                        I'm a software developer. I love to code and design applications and I'm availible for new exciting projects!
                    </p>
                    <div>
-                       <button data-aos="zoom-in"  data-aos-delay="2100" data-aos-duration="700"
+                       <a href="mailto:smolova.alexandra@gmail.com?body=You are hired!">
+                       <button  data-aos="zoom-in"  data-aos-delay="2100" data-aos-duration="700"
                                 type="button" class=" btn-lg button hoverable">
                            HIRE ME!
-                       </button>
+                       </button></a>
                    </div>
                </div>
            </div>
            <h1 data-aos="fade-up" data-aos-duration="800" class="banner__background-text">DEVELOPER</h1>
-           <div data-speed="-1" class=" banner-content__photo">
+           <div data-speed="-1" class="split-right banner-content__photo">
                <img data-aos="fade-left" data-aos-duration="2800" src="images/photo1.png" alt="My photo">
            </div>
         </div>
@@ -81,23 +82,30 @@
 
     <!-- ABOUT ME -->
     <section class="about-me">
-        <div class="rectangle--white">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor="#trigger-interests"
+             data-aos-anchor-placement="top-top" class="rectangle">
             <div class="interests-wrapper">
 
-                <div class="interest" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="circle"><img src="icons/paint%20(1).svg" class="icon--big" alt=""></div>
+                <div class="interest" >
+                    <div>
+                    <img src="icons/paint%20(3).svg" class="icon--big" alt="">
                     <h1>Design</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut </p>
+                    <p>Research and design are the fist things I do when creating a new project. I love to be creative with my work.</p>
+                    </div>
                 </div>
-                <div class="interest" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="circle"><img src="icons/programming.svg" class="icon--big" alt=""></div>
+                <div class="interest" >
+                    <div>
+                    <img src="icons/coding%20(1).svg" class="icon--big" alt="">
                     <h1>Code</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut </p>
+                    <p>I take coding seriously. I enjoy taking my pace and really working with details. I'm a fast learner so even when something seems hard at first I always manage to make it work.</p>
+                    </div>
                 </div>
-                <div class="interest" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="circle"><img src="icons/plane.svg" class="icon--big" alt=""></div>
-                    <h1>Travel</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut </p>
+                <div class="interest" >
+                    <div>
+                    <img src="icons/bird1.svg" class="icon--big" alt="">
+                    <h1>Create</h1>
+                    <p>I'm creative in my nature. After long day of coding I also enjoy painting, reading or just staring at the ceiling.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,7 +113,7 @@
 
 
 
-        <div class="fixed-background">
+        <div class=" resume fixed-background">
             <div class="fixed-background__image">
                 <div class="fixed-background__image--opacity"></div>
                 <div class="fixed-background__caption">
@@ -115,14 +123,15 @@
                     <button class=" btn-lg button hoverable">
                         <a href="files/zivotopis.pdf" target="_blank" >Download pdf</a>
                     </button>
-                    </div>
+                </div>
             </div>
+        </div>
 
 
 <div class="hor-scroll-container">
     <div class="viewport">
         <div class="scroll-container">
-            <div class="content"><h1 data-aos="zoom-in" class="projects-background-text">PROJECTS</h1>
+            <div class="content"><h1 data-aos="fade-up" data-aos-duration="800" class="projects-background-text">PROJECTS</h1>
                 <div class="horizontal-scroll-wrapper">
                     <div class="horizontal-scroll">
                         <div class="single-item">
@@ -243,9 +252,10 @@
     <div class="footer-content">
         <div class="footer-text">
             <h1>Did you like my work?</h1>
+            <h2>Get in touch!</h2>
+            <a href="mailto:smolova.alexandra@gmail.com">smolova.alexandra@gmail.com</a>
         </div>
-        <div class="footer-span"><a href="#top"><div class="circle hoverable"><img src="icons/up-arrow.svg" class="arrow" alt=""></div></a></div>
-    </div>
+        </div>
 </footer>
 
 
