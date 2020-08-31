@@ -1,4 +1,6 @@
-html{scroll-behavior: smooth;}
+html{scroll-behavior: smooth;
+    /*height: 100vh;
+    scroll-snap-type: y mandatory;*/}
 body {
     cursor: none;
     margin: 0;
@@ -6,6 +8,7 @@ body {
     font-family: 'Neutrif-Pro', sans-serif;
     letter-spacing: -0.036em;
     overflow-x: hidden;
+
     overflow-y: scroll;
     position: relative;
 }
@@ -48,8 +51,8 @@ a{
     height: 20px;
 }
 .icon--big{
-    width: 4vw;
-    height: 4vw;
+    width: 5vw;
+    height: 5vw;
 }
 .navbar{
     z-index:2;
@@ -57,9 +60,7 @@ a{
     top: 0;
     width: 100%;
     display: block;
-    mix-blend-mode: difference;
 }
-
 
 .banner{
     height: auto;
@@ -229,7 +230,6 @@ a{
     box-shadow: none;
 }
 .rectangle{
-    margin-top: -10vh;
     width: 100vw;
     height: 50vh;
     margin-bottom: 30vh;
@@ -240,48 +240,72 @@ a{
 }
 .interests-wrapper{
     width: 100vw;
+    height: 50vh;
     display: grid;
-    grid-template-columns: repeat(3, 25rem);
+    grid-template-columns: repeat(3, 20vw);
     justify-content: center;
     position: relative;
+    grid-gap: 3rem;
 }
 .interest{
     width: 100%;
-    display: inline-block;
     text-align: center;
     position: relative;
-}
-.interest div:hover{
-    transform: scale(1.15);
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
 
-.interest img{
-    margin:auto;
-    margin-bottom: 3rem;
+}
+.interest .face{
+    width: 100%;
+    height: 100%;
+    background-color: #172d2e;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+    -webkit-font-smoothing: antialiased;
+}
+.face div{
+    backface-visibility: hidden;
+    display: inline-block;
+    width: 60%;
+}
+.face.back p{
+    text-align: justify;
+    font-size: 13px;
+}
+.face *{
+    transform: translateZ(40px);
+}
+.interest:hover .face.front{
+    transform: perspective(500px) rotateY(180deg);
+}
+.interest .face.back{
+    transform: perspective(500px) rotateY(180deg);
+}
+.interest:hover .face.back{
+    transform: perspective(500px) rotateY(360deg);
 }
 .interest>*{
     width: 75%;
     margin: auto;
     font-weight: bold;
-    margin-bottom: 1rem;
 }
 .interest h1{
-    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 21px;
     font-weight: bold;
+    color: white;
+    padding-top: 2rem;
 }
 
-.circle{
-    width: 12vw;
-    height: 12vw;
-    align-items: center;
-    display: flex;
-    border-radius: 50%;
-    background-color: #eeeeee;
-    justify-content: center;
-}
-.circle:hover{
-    opacity: 0.7;
-}
 
 
 /*FIXED BACKGROUND IMAGE*/
@@ -379,12 +403,13 @@ a{
     backface-visibility: hidden;
     transform-style: preserve-3d;
     width: 100%;
-    padding-top: 240vh;
+    padding-top: 220vh;
 }
 .content {
     overflow: hidden;
     position: relative;
     width: 100%;
+    padding-top: 3rem;
 }
 
 .single-item {
@@ -485,9 +510,22 @@ a{
 .single-item-content__image img:hover{
     transform: scale(1.1);
 }
-
-.main{
+main{
     position: relative;
+}
+
+.snap-here{
+    scroll-snap-align: center;
+    height: auto;
+    scroll-snap-stop: always;
+}
+.snap-end{
+    scroll-snap-align: none;
+    scroll-snap-stop: unset;
+}
+.projects{
+    position: relative;
+    height: auto;
 }
 .footer{
     position: absolute;
@@ -561,6 +599,8 @@ a{
     -moz-box-shadow: 10px 21px 33px -4px rgba(94,94,94,0.69);
     box-shadow: 10px 21px 33px -4px rgba(94,94,94,0.69);
 }
+
+
 
 
 /* MOBILE */
