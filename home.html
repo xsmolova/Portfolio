@@ -145,12 +145,14 @@
             </div>
         </div>
 </section>
-<section class="projects">
-    <div class="viewport">
-        <div class="scroll-container">
-            <div class="content"><h1 data-aos="fade-up" data-aos-duration="800" class="projects-background-text">PROJECTS</h1>
-                <div class="horizontal-scroll-wrapper">
-                    <div class="horizontal-scroll">
+
+
+    <h1 data-aos="fade-up" data-aos-duration="800" class="projects-background-text">PROJECTS</h1>
+
+                    <div class="horizontal-scroll-container"
+                         data-0-top-top="transform:translateX(200%);"
+                         data--2000-top-bottom="transform:translateX(-200%);">
+                        <section class="hs-content">
                         <div class="single-item">
                             <div data-depth-hor="-3" data-direction="left">
                                 <div class="single-item-content">
@@ -168,6 +170,7 @@
                                     <div class="single-item-content__image">
                                         <img src="images/eshop.png" alt="">
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -259,15 +262,8 @@
                                 </div>
                             </div>
                         </div>
-
+                        </section>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 </main>
 
 
@@ -302,6 +298,10 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script type="text/javascript" src="skrollr.js"></script>
+<script type="text/javascript">
+    var s = skrollr.init();
 </script>
 </body>
 </html>
