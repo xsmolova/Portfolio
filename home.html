@@ -44,7 +44,7 @@
     <ul class="navbar-nav mr-auto flex-row">
         <li class="ml-3 nav-item"><a class="nav-link hoverable" href="#"><img src="icons/facebook.svg" class="d-inline-block align-top icon" alt=""></a></li>
         <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/linkedin.svg" class="d-inline-block align-top icon" alt=""></a></li>
-        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/mail.svg" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="nav-item"><a class="nav-link hoverable" href="mailto:smolova.alexandra@gmail.com"><img src="icons/mail.svg" class="d-inline-block align-top icon" alt=""></a></li>
     </ul>
     <ul class="navbar-nav ml-auto flex-row">
         <li class="mr-3 nav-item p-auto"><a class="nav-link hoverable" href="#"><img src="icons/menu.svg" class="d-inline-block align-top icon" alt=""></a></li>
@@ -57,15 +57,15 @@
 
     <div class="banner">
         <div class="banner-content snap-here" id="js-banner">
-           <div class="split-right triangle triangle--right"></div>
-           <div data-speed="-1" class="split-left banner-content__text--left">
+            <div class="split-right triangle triangle--right"></div>
+           <div data-speed="-1" class="split-left banner-content__text">
                <p data-aos="flip-up" data-aos-duration="800">HELLO! My name is</p>
                <h1 id="trigger-interests" data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">Ing. Alexandra Smolová</h1>
-               <div class="banner-content__text">
+               <div class="banner-content__text--small">
                    <p data-aos="fade-up" data-aos-delay="1400" data-aos-duration="700" >
                        I'm a software developer. I love to code and design applications and I'm availible for new exciting projects!
                    </p>
-                   <div>
+                   <div class="hidden-for-mobile">
                        <a href="mailto:smolova.alexandra@gmail.com?body=You are hired!">
                        <button  data-aos="zoom-in"  data-aos-delay="2100" data-aos-duration="700"
                                 type="button" class=" btn-lg button hoverable">
@@ -82,16 +82,16 @@
 
 
     <!-- ABOUT ME -->
-    <section class="snap-here">
+
         <div data-aos="fade-up" data-aos-duration="800" data-aos-anchor="#trigger-interests"
-             data-aos-anchor-placement="center-top" class="rectangle">
+             data-aos-anchor-placement="center-top" class="rectangle"><section class="snap-here hidden-for-mobile"></section>
             <div class="interests-wrapper">
                 <div class="interest snap-here-start" >
                     <div>
                     <div class="face front hoverable">
                         <div>
                             <img src="icons/proportions.svg" class="icon--big" alt="">
-                            <h1>Design</h1>
+                            <h3>Design</h3>
                         </div>
                     </div>
                     <div class="face back">
@@ -106,7 +106,7 @@
                     <div class="face front hoverable">
                         <div>
                             <img src="icons/code%20(1).svg" class="icon--big" alt="">
-                            <h1>Code</h1>
+                            <h3>Code</h3>
                         </div>
                     </div>
                     <div class="face back">
@@ -121,7 +121,7 @@
                     <div class="face front hoverable">
                         <div>
                             <img src="icons/bird2.svg" class="icon--big" alt="">
-                            <h1>Create</h1>
+                            <h3>Create</h3>
                         </div>
                     </div>
                     <div class="face back">
@@ -133,7 +133,6 @@
                 </div>
             </div>
         </div>
-    </section>
     </div>
 
 <section>
@@ -153,7 +152,7 @@
 </section>
 
 
-    <h1 data-aos="fade-up" data-aos-duration="800" class=" projects-background-text">PROJECTS</h1>
+    <h1 data-aos="fade-up" data-aos-duration="800" class=" projects__background-text">PROJECTS</h1>
 
                     <div class="horizontal-scroll-container"
                          data-0-top-top="transform:translateX(200%);"
@@ -164,8 +163,8 @@
                                 <div class="single-item-content snap-here snap-here-start">
                                     <div class="single-item-content__text">
                                         <div>
-                                        <h1>01. E-shop</h1>
-                                        <h2>Sell Watches</h2>
+                                        <h3>01. E-shop</h3>
+                                        <h1>Sell Watches</h1>
                                         <p>
                                             Programming languages HTML5, CSS3, JS, PHP, Laravel framework <br>
                                             As a semestral project I designed and programmed e-shop for selling watches. I made a couple more
@@ -185,12 +184,12 @@
                                 <div class="single-item-content snap-here-start">
                                     <div class="single-item-content__text ">
                                         <div>
-                                        <h1>
+                                        <h3>
                                             02. Neuroevolution for Flappy Bird
-                                        </h1>
-                                        <h2>
+                                        </h3>
+                                        <h1>
                                             Neural networks optimized with genetic algorithm
-                                        </h2>
+                                        </h1>
                                         <p>
                                             Programming languages HTML5, CSS3, JS, PHP, Laravel framework <br>
                                             As a semestral project I designed and programmed e-shop for selling watches. I made a couple more
@@ -209,12 +208,12 @@
                                 <div class="single-item-content snap-here-start" >
                                     <div class="single-item-content__text">
                                         <div>
-                                        <h1>
+                                        <h3>
                                             03. Master Thesis
-                                        </h1>
-                                        <h2>
+                                        </h3>
+                                        <h1>
                                             Driving simulator with Eyetracking
-                                        </h2>
+                                        </h1>
                                         <p>
                                             Programming language C#, Unity 3D, Tobii Eyetracker <br>
                                             Analysis of driver behavior when distracted by
@@ -233,8 +232,8 @@
                                 <div class="single-item-content snap-here-start">
                                     <div class="single-item-content__text">
                                         <div>
-                                        <h1>04. Bachelor thesis</h1>
-                                        <h2>StellAR - Augmented Reality in E-learning</h2>
+                                        <h3>04. Bachelor thesis</h3>
+                                        <h1>StellAR - Augmented Reality in E-learning</h1>
                                         <p>
                                             Programming language C#, Unity 3D, Vuforia <br>
                                             StellAR is a educational mobile application that uses technology of augmented reality
@@ -253,8 +252,8 @@
                                 <div class="single-item-content snap-here-start">
                                     <div class="single-item-content__text">
                                         <div>
-                                        <h1>05. MOTH</h1>
-                                        <h2>Indie Game</h2>
+                                        <h3>05. MOTH</h3>
+                                        <h1>Indie Game</h1>
                                         <p>
                                             Programming language C#, Unity 3D <br>
                                             Cryptid hunt! Survive an encounter with the famous Mothman and bring home a photo as proof.
