@@ -37,14 +37,26 @@ function onMouseHoverOut() {
 window.addEventListener(
     "scroll",
     () => {
+        console.log('window.pageYOffset ' + window.pageYOffset);
+        console.log('document.body.offsetHeight ' + document.body.offsetHeight);
+        console.log('window.innerHeight ' + window.innerHeight);
+        var hsC = document.getElementById('js-horizontal-scroll-content');
+        var hs = document.getElementById('js-horizontal-scroll');
+        console.log('hs.offsetTop ' + hs.offsetTop);
+        console.log('hs.offsetTop ' + hs.offsetHeight);
+        console.log('hs-content.offsetTop ' + hsC.offsetTop);
+
         document.body.style.setProperty(
             "--scroll",
             window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
         );
+        document.body.style.setProperty(
+            "--scroll-left",
+            hsC.offsetTop / (hs.offsetHeight - window.innerHeight)
+        );
     },
     false
 );
-
 
 
 document.addEventListener('mousemove', parallax);
@@ -81,5 +93,4 @@ function parallax(e) {
     })
 
 }
-
 

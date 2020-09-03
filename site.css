@@ -1,7 +1,9 @@
 html{
     scroll-behavior: smooth;
-    height: 100vh;
+    height: 100%;
     scroll-snap-type: y proximity;
+    min-height:100%;
+    display:block;
 }
 body {
     cursor: none;
@@ -13,6 +15,7 @@ body {
     overflow-x: hidden;
     height: auto;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     position: relative;
     box-sizing: border-box;
 }
@@ -389,17 +392,37 @@ p{
     font-weight: bold;
     color: #1b1b1b;
 }
+
+
+@keyframes scrollLeft {
+    to {
+        transform: translateX(-200%);
+    }
+}
+.hidden-for-animation{opacity: 0}
+.scroll-left{
+    animation: scrollLeft 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll-left) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
 .horizontal-scroll-container{
-    position: sticky;
+    position: relative;
     top:0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 500vh;
     max-width: 100%;
     display: flex;
 
 }
 .horizontal-scroll-container section{
+    transform:translateX(200%);
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
     min-width: 100%;
     height: auto;
     display: flex;
@@ -588,7 +611,10 @@ main{
 
 
 /* MOBILE */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 812px){
+    body{
+        cursor: auto;
+    }
     .nav-item{
         margin-right: 16px;
     }
@@ -598,14 +624,17 @@ main{
         visibility: hidden;
     }
 
-
+    .banner{
+        height: 100vh;
+        width: 100vw;
+    }
     .banner-content__text{
         display: inline-block;
         width: 100%;
         height: 100%;
         position: relative;
         text-align: center;
-        padding: 10% 0 0 0;
+        padding: 20% 0 0 0;
     }
     .banner-content__text>p{
         text-align: center;
@@ -613,7 +642,7 @@ main{
     }
     .banner-content__text--small{
         width: 100%;
-        padding-top:45vh;
+        padding-top:30vh;
         margin: auto;
     }
     .banner-content__text--small p{
@@ -624,6 +653,7 @@ main{
     .banner-content__text h1{
         width: 100%;
     }
+
     .banner-content__photo img{
         width: 60vw;
         height: auto;
@@ -634,7 +664,7 @@ main{
         left:0;
     }
     .banner__background-text{
-       top:30%
+       top:50%
     }
     .triangle--right{
         width: 100%;
@@ -704,10 +734,13 @@ main{
     .horizontal-scroll-container{
         position: relative;
         transform: none !important;
+        height: auto;
+        margin-bottom: 50vh;
     }
     .horizontal-scroll-container section{
+        transform:translateX(0%);
         display: grid;
-        grid-template-rows: repeat(5, 170vh);
+        grid-template-rows: repeat(5, 130vh);
         max-width: 100%;
         width: 100vw;
         height: auto;
