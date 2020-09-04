@@ -20,19 +20,19 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="site.css" rel="stylesheet">
 </head>
-<body class="body__black" >
+<body class="body__white" >
 
 <!-- Cursor -->
 <div class="cursor hidden-for-mobile">
     <div class="cursor__ball cursor__ball--big ">
-        <svg height="30" width="30">
-            <circle cx="15" cy="15" r="15" stroke-width="0"></circle>
+        <svg height="32" width="32">
+            <circle cx="16" cy="16" r="15" stroke-width="0"></circle>
         </svg>
     </div>
 
     <div class="cursor__ball cursor__ball--small">
-        <svg height="30" width="30">
-            <circle cx="15" cy="15" r="5" stroke-width="0"></circle>
+        <svg height="32" width="32">
+            <circle cx="16" cy="16" r="5" stroke-width="0"></circle>
         </svg>
     </div>
 </div>
@@ -42,12 +42,11 @@
 <!-- HEADER AND NAV -->
 <nav class="navbar navbar-expand-sm bg-transparent w-100 d-flex ">
     <ul class="navbar-nav mr-auto flex-row">
-        <li class="ml-3 nav-item"><a class="nav-link hoverable" href="#"><img src="icons/facebook.svg" class="d-inline-block align-top icon" alt=""></a></li>
-        <li class="nav-item"><a class="nav-link hoverable" href="#"><img src="icons/linkedin.svg" class="d-inline-block align-top icon" alt=""></a></li>
-        <li class="nav-item"><a class="nav-link hoverable" href="mailto:smolova.alexandra@gmail.com"><img src="icons/mail.svg" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="ml-3 nav-item"><a class="nav-link hoverable" href="https://www.linkedin.com/in/alexandra-smolova-3488a3103"><img src="icons/linkedin1.svg" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="nav-item"><a class="nav-link hoverable" href="mailto:smolova.alexandra@gmail.com"><img src="icons/email1.svg" class="d-inline-block align-top icon" alt=""></a></li>
     </ul>
     <ul class="navbar-nav ml-auto flex-row">
-        <li class="mr-3 nav-item p-auto"><a class="nav-link hoverable" href="#"><img src="icons/menu.svg" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="mr-3 nav-item p-auto"><a class="nav-link hoverable" href="#"><img src="icons/menu1.svg" class="d-inline-block align-top icon" alt=""></a></li>
     </ul>
 </nav>
 
@@ -60,7 +59,7 @@
             <div class="split-right triangle triangle--right"></div>
            <div data-speed="-1" class="split-left banner-content__text">
                <p data-aos="flip-up" data-aos-duration="800">HELLO! My name is</p>
-               <h1 id="trigger-interests" data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">Ing. Alexandra Smolová</h1>
+               <h1 data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">Alexandra Smolová</h1>
                <div class="banner-content__text--small">
                    <p data-aos="fade-up" data-aos-delay="1400" data-aos-duration="700" >
                        I'm a software developer. I love to code and design applications and I'm availible for new exciting projects!
@@ -74,7 +73,7 @@
                    </div>
                </div>
            </div>
-           <h1 data-aos="fade-up" data-aos-duration="800" class="banner__background-text">DEVELOPER</h1>
+           <h1 data-aos="fade-up" data-aos-duration="800" class="banner__background-text">#DEVELOPER</h1>
            <div data-speed="-1" class="split-right banner-content__photo">
                <img data-aos="fade-left" data-aos-duration="2800" src="images/photo1.png" alt="My photo">
            </div>
@@ -83,8 +82,7 @@
 
     <!-- ABOUT ME -->
 
-        <div data-aos="fade-up" data-aos-duration="800" data-aos-anchor="#trigger-interests"
-             data-aos-anchor-placement="center-top" class="snap-here rectangle">
+        <div data-aos="fade-up" data-aos-duration="1000" class="snap-here rectangle">
             <div class="interests-wrapper">
                 <div class="interest snap-here-start" >
                     <div>
@@ -135,14 +133,17 @@
         </div>
 
 <section>
-        <div class="snap-here resume fixed-background">
-            <div class="fixed-background__image">
-                <div class="fixed-background__image--opacity"></div>
-                <div class="fixed-background__caption">
-                    <h2>
+        <div class="snap-here resume">
+            <div class="resume__background-image">
+                <img data-aos="fade-up" data-aos-duration="1000" src="images/titlephoto.jpg" alt="My photo">
+
+            </div>
+            <div class="resume__background">
+                <div class="resume__caption">
+                    <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                         Check out my resume!
                     </h2>
-                    <button class=" btn-lg button hoverable">
+                    <button data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000" class=" btn-lg button hoverable">
                         <a href="files/zivotopis.pdf" target="_blank" >Download pdf</a>
                     </button>
                 </div>
@@ -150,11 +151,9 @@
         </div>
 </section>
 
-
-    <h1 data-aos="fade-up" data-aos-duration="800" class=" projects__background-text">PROJECTS</h1>
-
+    <h1 class="projects__background-text-x hidden-for-pc">PROJECTS</h1>
                     <div class=" horizontal-scroll-container" id="js-horizontal-scroll">
-                        <section class="hs-content scroll-left" id="js-horizontal-scroll-content">
+                        <section class="hs-content scroll-left" id="js-horizontal-scroll-content"><h1 class="scroll-right projects__background-text">PROJECTS</h1>
                         <div class="single-item">
                             <div data-depth-hor="-3" data-direction="left">
                                 <div class="single-item-content snap-here snap-here-start">
@@ -278,7 +277,7 @@
     <div class="triangle triangle--left"></div>
     <div class="footer-content">
         <div class="footer-text">
-            <h1>Did you like my work?</h1>
+            <h1 class="hidden-for-mobile">Did you like my work?</h1>
             <h2>Get in touch!</h2>
             <a href="mailto:smolova.alexandra@gmail.com">smolova.alexandra@gmail.com</a>
         </div>
