@@ -46,8 +46,29 @@
         <li class="nav-item"><a class="nav-link hoverable" href="mailto:smolova.alexandra@gmail.com"><img src="icons/email1.svg" class="d-inline-block align-top icon" alt=""></a></li>
     </ul>
     <ul class="navbar-nav ml-auto flex-row">
+        <!--
         <li class="mr-3 nav-item p-auto"><a class="nav-link hoverable" href="#"><img src="icons/menu1.svg" class="d-inline-block align-top icon" alt=""></a></li>
+        -->
+        <!-- MENU ICON for mobile -->
+        <li class="mr-3 nav-item p-auto">
+        <a id="js-nav-menu" class="hoverable" href="#" title="Menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </a></li>
     </ul>
+</nav>
+<!-- NAV for mobile -->
+<nav id="nav">
+    <div class="nav-menu">
+        <div class="nav__vertical-line">
+        <a href="#" class="hoverable active">Home</a>
+        <a href="#" class="hoverable">About me</a>
+        <a href="#" class="hoverable">Projects</a>
+        <a href="#" class="hoverable">Contact</a>
+        </div>
+
+    </div>
 </nav>
 
 <!-- MAIN -->
@@ -140,10 +161,10 @@
             </div>
             <div class="resume__background">
                 <div class="resume__caption">
-                    <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                    <h2 data-aos="fade-up" data-aos-duration="800" >
                         Check out my resume!
                     </h2>
-                    <button data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000" class=" btn-lg button hoverable">
+                    <button data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" class=" btn-lg button hoverable">
                         <a href="files/zivotopis.pdf" target="_blank" >Download pdf</a>
                     </button>
                 </div>
@@ -275,11 +296,11 @@
 <!-- FOOTER -->
 <footer class="footer snap-here">
     <div class="triangle triangle--left"></div>
-    <div class="footer-content">
+    <div class="footer-content" data-aos="fade-up" data-aos-duration="700">
         <div class="footer-text">
             <h1 class="hidden-for-mobile">Did you like my work?</h1>
             <h2>Get in touch!</h2>
-            <a href="mailto:smolova.alexandra@gmail.com">smolova.alexandra@gmail.com</a>
+            <a class="hoverable" href="mailto:smolova.alexandra@gmail.com">smolova.alexandra@gmail.com</a>
         </div>
         </div>
 </footer>

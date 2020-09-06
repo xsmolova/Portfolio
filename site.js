@@ -88,3 +88,30 @@ function parallax(e) {
 
 }
 */
+
+var nav = document.getElementById("nav");
+var menu = document.getElementById("js-nav-menu");
+
+menu.addEventListener("click", function(){
+    this.classList.toggle("active");
+
+    menu.classList.toggle("change");
+
+    if (nav.style.width === "100vw") {
+        nav.style.width = "0";
+        enableScrolling();
+    } else {
+        nav.style.width = "100vw";
+        disableScrolling();
+    }
+});
+
+function disableScrolling(){
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+}
+
+function enableScrolling(){
+    window.onscroll=function(){};
+}
