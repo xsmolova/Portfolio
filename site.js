@@ -91,6 +91,7 @@ function parallax(e) {
 
 var nav = document.getElementById("nav");
 var menu = document.getElementById("js-nav-menu");
+var disabled;
 
 menu.addEventListener("click", function(){
     this.classList.toggle("active");
@@ -100,11 +101,22 @@ menu.addEventListener("click", function(){
     if (nav.style.width === "100vw") {
         nav.style.width = "0";
         enableScrolling();
+        disabled = 0;
     } else {
         nav.style.width = "100vw";
         disableScrolling();
+        disabled = 1;
     }
 });
+
+nav.addEventListener("click", function () {
+    if (disabled == 1) {
+        menu.classList.toggle("change");
+        nav.style.width = "0";
+        disabled = 0;
+        enableScrolling();
+    }
+}) ;
 
 function disableScrolling(){
     var x=window.scrollX;

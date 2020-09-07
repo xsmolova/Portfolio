@@ -20,7 +20,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="site.css" rel="stylesheet">
 </head>
-<body class="body__white" >
+<body class="body__white" data-spy="scroll" data-target="#navigation" data-offset="0">
 
 <!-- Cursor -->
 <div class="cursor hidden-for-mobile">
@@ -51,7 +51,7 @@
         -->
         <!-- MENU ICON for mobile -->
         <li class="mr-3 nav-item p-auto">
-        <a id="js-nav-menu" class="hoverable" href="#" title="Menu">
+        <a id="js-nav-menu" class="nav-link hoverable" href="#" title="Menu">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -60,22 +60,20 @@
 </nav>
 <!-- NAV for mobile -->
 <nav id="nav">
-    <div class="nav-menu">
-        <div class="nav__vertical-line">
-        <a href="#" class="hoverable active">Home</a>
-        <a href="#" class="hoverable">About me</a>
-        <a href="#" class="hoverable">Projects</a>
-        <a href="#" class="hoverable">Contact</a>
-        </div>
-
+    <div class="nav-menu" >
+        <ul class="nav__vertical-line" id="navigation">
+            <li><a href="#Top" class="nav-link hoverable">Home</a></li>
+            <li><a href="#About" class="nav-link hoverable">About me</a></li>
+            <li><a href="#Projects" class="nav-link hoverable">Projects</a></li>
+            <li><a href="#Contact" class="nav-link hoverable">Contact</a></li>
+        </ul>
     </div>
 </nav>
-
 <!-- MAIN -->
 <main>
     <!-- BANNER -->
 
-    <div class="banner">
+    <div id="Top" class="banner">
         <div class="banner-content snap-here" id="js-banner">
             <div class="split-right triangle triangle--right"></div>
            <div data-speed="-1" class="split-left banner-content__text">
@@ -103,8 +101,8 @@
 
     <!-- ABOUT ME -->
 
-        <div data-aos="fade-up" data-aos-duration="1000" class="snap-here rectangle">
-            <div class="interests-wrapper">
+        <div id="About" data-aos="fade-up" data-aos-duration="1000" class="snap-here rectangle">
+            <div  class="interests-wrapper">
                 <div class="interest snap-here-start" >
                     <div>
                     <div class="face front hoverable">
@@ -171,7 +169,7 @@
             </div>
         </div>
 </section>
-
+<section id="Projects"></section>
     <h1 class="projects__background-text-x hidden-for-pc">PROJECTS</h1>
                     <div class=" horizontal-scroll-container" id="js-horizontal-scroll">
                         <section class="hs-content scroll-left" id="js-horizontal-scroll-content"><h1 class="scroll-right projects__background-text">PROJECTS</h1>
@@ -294,7 +292,7 @@
 
 
 <!-- FOOTER -->
-<footer class="footer snap-here">
+<footer class="footer snap-here" id="Contact">
     <div class="triangle triangle--left"></div>
     <div class="footer-content" data-aos="fade-up" data-aos-duration="700">
         <div class="footer-text">
