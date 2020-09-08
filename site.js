@@ -40,6 +40,7 @@ window.addEventListener(
         var hsC = document.getElementById('js-horizontal-scroll-content');
         var hs = document.getElementById('js-horizontal-scroll');
 
+        if(hsC!=null && hs!=null){
         document.body.style.setProperty(
             "--scroll",
             window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
@@ -48,6 +49,7 @@ window.addEventListener(
             "--scroll-left",
             hsC.offsetTop / (hs.offsetHeight - window.innerHeight)
         );
+        }
     },
     false
 );

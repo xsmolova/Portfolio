@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>Ing. Alexandra Smolová</title>
+
+    <!-- COLOR OF HEADER BAR -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#010101">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#010101">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#010101">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- LINKS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="site.css" rel="stylesheet">
+</head>
+<body class="body__white" data-spy="scroll" data-target="#navigation" data-offset="0">
+
+<!-- Cursor -->
+<div class="cursor hidden-for-mobile">
+    <div class="cursor__ball cursor__ball--big ">
+        <svg height="32" width="32">
+            <circle cx="16" cy="16" r="15" stroke-width="0"></circle>
+        </svg>
+    </div>
+
+    <div class="cursor__ball cursor__ball--small">
+        <svg height="32" width="32">
+            <circle cx="16" cy="16" r="5" stroke-width="0"></circle>
+        </svg>
+    </div>
+</div>
+<!-- Scroll bar -->
+
+
+<!-- HEADER AND NAV -->
+<nav class="navbar navbar-expand-sm bg-transparent w-100 d-flex ">
+    <ul class="navbar-nav mr-auto flex-row">
+        <li class="ml-3 nav-item"><a class="nav-link hoverable" href="https://www.linkedin.com/in/alexandra-smolova-3488a3103"><img src="icons/linkedin1.svg" class="d-inline-block align-top icon" alt=""></a></li>
+        <li class="nav-item"><a class="nav-link hoverable" href="mailto:smolova.alexandra@gmail.com"><img src="icons/email1.svg" class="d-inline-block align-top icon" alt=""></a></li>
+    </ul>
+    <ul class="navbar-nav ml-auto flex-row">
+        <!--
+        <li class="mr-3 nav-item p-auto"><a class="nav-link hoverable" href="#"><img src="icons/menu1.svg" class="d-inline-block align-top icon" alt=""></a></li>
+        -->
+        <!-- MENU ICON for mobile -->
+        <li class="mr-3 nav-item p-auto">
+            <a id="js-nav-menu" class="nav-link hoverable" href="#" title="Menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a></li>
+    </ul>
+</nav>
+<!-- NAV for mobile -->
+<nav id="nav">
+    <div class="nav-menu" >
+        <ul class="nav__vertical-line" id="navigation">
+            <li><a href="home.html#Top" class="nav-link hoverable">Home</a></li>
+            <li><a href="home.html#About" class="nav-link hoverable">About me</a></li>
+            <li><a href="home.html#Projects" class="nav-link hoverable">Projects</a></li>
+            <li><a href="home.html#Contact" class="nav-link hoverable">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- MAIN -->
+<main>
+    <!-- BANNER -->
+    <div class="banner">
+        <div class="project-banner-content" id="js-banner-projects">
+            <div data-speed="2" class=" triangle "></div>
+            <div class="project-banner-content__background-text"><h1>E-SHOP</h1></div>
+            <div data-speed="-2" class="project-title">
+                <div>
+                    <h3>01. E-SHOP</h3>
+                    <h1>Sell Watches</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-about-text">
+        <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia vel ante at blandit. Proin id porta tortor. Etiam congue, ante at dictum aliquam, quam risus consequat dui, id porta turpis urna in lacus. Phasellus id purus velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer placerat neque tempor dui lacinia semper vel ut nisi. Fusce consequat rutrum velit, at sagittis ante posuere ut. Integer varius ornare justo sed mollis. Donec et gravida purus. Ut imperdiet blandit ipsum nec varius. Suspendisse accumsan rhoncus eros tincidunt placerat. Nunc et nisl mollis, tempus quam ac, dapibus dui. Maecenas id sem viverra, efficitur augue vel, sagittis orci.
+
+            Vivamus mollis sed orci sed accumsan. Vestibulum varius ante eu nunc lacinia, at vehicula eros rhoncus. Phasellus orci nunc, porttitor non dapibus sit amet, gravida quis tortor. Curabitur porta consequat metus, tristique egestas ex aliquet vel. Curabitur vitae tristique turpis. Donec consequat dapibus mi sit amet venenatis. Donec erat augue, cursus at dui at, ornare cursus eros. Quisque dolor lacus, consectetur a suscipit facilisis, hendrerit a mauris. Suspendisse at tempus sapien, ac ullamcorper neque. Donec viverra arcu mauris, in dapibus est rhoncus non.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+            jdnqwlkdnqwjldn: kqwdindniwdqw
+
+        </p>
+        </div>
+    </div>
+
+    <div class="screenshots"><h2>User Interface</h2>
+        <img  src="images/screens/eshop/homepage.png" alt="My photo">
+        <img  src="images/screens/eshop/allProducts.png" alt="My photo">
+        <img  src="images/screens/eshop/detail.png" alt="My photo">
+        <img  src="images/screens/eshop/order1.png" alt="My photo">
+        <img  src="images/screens/eshop/order2.png" alt="My photo">
+        <img  src="images/screens/eshop/order3.png" alt="My photo">
+    </div>
+
+
+    <div class="screenshots"><h2>Admin Interface</h2>
+        <img  src="images/screens/eshop/homepage.png" alt="My photo">
+        <img  src="images/screens/eshop/allProducts.png" alt="My photo">
+        <img  src="images/screens/eshop/detail.png" alt="My photo">
+        <img  src="images/screens/eshop/order1.png" alt="My photo">
+        <img  src="images/screens/eshop/order2.png" alt="My photo">
+        <img  src="images/screens/eshop/order3.png" alt="My photo">
+    </div>
+</main>
+<!-- FOOTER -->
+<footer class="footer snap-here" id="Contact">
+    <div class="triangle triangle--left"></div>
+    <div class="footer-content" data-aos="fade-up" data-aos-duration="700">
+        <div class="footer-text">
+            <h1 class="hidden-for-mobile">Did you like my work?</h1>
+            <h2>Get in touch!</h2>
+            <a class="hoverable" href="mailto:smolova.alexandra@gmail.com">smolova.alexandra@gmail.com</a>
+        </div>
+    </div>
+</footer>
+<!-- SCRIPTS -->
+<script src="site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+<script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
