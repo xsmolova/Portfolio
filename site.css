@@ -367,6 +367,9 @@ p{
     background-color: transparent;
     border: solid #e09f3e 2px;
 }
+.btn-sm{
+    width: 7rem;
+}
 .button:hover{
     background-color: #e09f3e;
     border: solid #e09f3e 2px;
@@ -636,16 +639,17 @@ p{
     margin: auto;
     padding: 0 0 0 5%;
     width: 50%;
-    height: 60%;
+    height: 70%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     float: left;
     border-left: solid #e09f3e 2px;
 
 }
 .single-item-content__text div{
     display: inline-block;
+
 }
 .single-item-content__text h3{
     color: #e09f3e;
@@ -655,9 +659,14 @@ p{
     margin-top:2%;
 }
 .single-item-content__text p{
+    margin-top:1rem;
     text-align: justify;
     width: 80%;
     height: auto;
+}
+.single-item-content__text p>a{
+    color: black;
+    text-decoration: underline;
 }
 .single-item-content__text h6{
     display: inline-block;
@@ -738,12 +747,12 @@ main{
 }
 .footer-text h2{
     text-align: center;
-    padding-top: 2rem;
-
+    padding-top: 3rem;
+    color:white
 }
 .footer-text a{
     text-decoration: underline;
-    padding-top: 1rem;
+
     display:block;
     text-align: center;
     font-weight: bold;
