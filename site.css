@@ -244,6 +244,7 @@ p{
     align-items: center;
     width: 100vw;
     height: 100%;
+    text-align: center;
 }
 .project-title div{
     display: inline-block;
@@ -782,28 +783,48 @@ main{
     align-items: center;
     margin-bottom: 5rem;
 }
+.project-about-text div>h6{
+    display: inline-block;
+    margin-right: 0.5rem;
+    background-color: #e09f3e;
+    padding:0.3rem;
+    border-radius: 4px;
+    color: white;
+    position: relative;
+    margin-bottom: 2rem;
+}
 .project-about-text div{
     display: inline-block;
+    width: 60%;
+
 }
 .project-about-text p{
-    width: 60%;
+    width: 100%;
     height: auto;
     text-align: justify;
     left: 0;
     right: 0;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     margin: auto;
 }
 .screenshots{
     max-width: 100vw;
+    width: 100%;
     display: inline-block;
     text-align: center;
 }
-.screenshots h2{
+.screenshots h3{
     padding-bottom: 1rem;
     text-align: left;
-    padding-left: 10%
+    padding-left: 10%;
+    color: #e09f3e;
+}
+.screenshots h6{
+    text-align: left;
+    padding-left: 10%;
+    padding-bottom: 1rem;
+    font-weight: bold;
 }
 .screenshots img{
     max-width: 80vw;
