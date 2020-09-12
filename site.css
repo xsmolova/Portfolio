@@ -814,11 +814,12 @@ main{
     display: inline-block;
     text-align: center;
 }
-.screenshots h3{
+.screenshots h4{
+    font-weight: bold;
+    text-transform: uppercase;
     padding-bottom: 1rem;
     text-align: left;
     padding-left: 10%;
-    color: #e09f3e;
 }
 .screenshots h6{
     text-align: left;
