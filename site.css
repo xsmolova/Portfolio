@@ -319,7 +319,9 @@ p{
     border: solid #e09f3e 2px;
 }
 .btn-sm{
-    width: 7rem;
+    width: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .button:hover{
     background-color: #e09f3e;
@@ -793,6 +795,7 @@ main{
     border-radius: 4px;
     color: white;
     position: relative;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 .project-about-text div{
@@ -807,8 +810,11 @@ main{
     left: 0;
     right: 0;
     padding-top: 2rem;
-    padding-bottom: 1rem;
     margin: auto;
+}
+.project-about-text p a{
+    color: black;
+    text-decoration: underline;
 }
 .screenshots{
     max-width: 100vw;
@@ -830,13 +836,18 @@ main{
     font-weight: bold;
 }
 .screenshots img{
-    max-width: 80vw;
+    max-width: 80%;
+    width: auto;
+    height: auto;
     margin-bottom: 10%;
     -webkit-box-shadow: 10px 21px 33px -4px rgba(94,94,94,0.69);
     -moz-box-shadow: 10px 21px 33px -4px rgba(94,94,94,0.69);
     box-shadow: 10px 21px 33px -4px rgba(94,94,94,0.69);
 }
+.screenshots iframe{
+    margin-bottom: 3rem;
 
+}
 
 
 

@@ -88,13 +88,27 @@
 
     <div class="project-about-text">
         <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia vel ante at blandit. Proin id porta tortor. Etiam congue, ante at dictum aliquam, quam risus consequat dui, id porta turpis urna in lacus. Phasellus id purus velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer placerat neque tempor dui lacinia semper vel ut nisi. Fusce consequat rutrum velit, at sagittis ante posuere ut. Integer varius ornare justo sed mollis. Donec et gravida purus. Ut imperdiet blandit ipsum nec varius. Suspendisse accumsan rhoncus eros tincidunt placerat. Nunc et nisl mollis, tempus quam ac, dapibus dui. Maecenas id sem viverra, efficitur augue vel, sagittis orci.
-
-                Vivamus mollis sed orci sed accumsan. Vestibulum varius ante eu nunc lacinia, at vehicula eros rhoncus. Phasellus orci nunc, porttitor non dapibus sit amet, gravida quis tortor. Curabitur porta consequat metus, tristique egestas ex aliquet vel. Curabitur vitae tristique turpis. Donec consequat dapibus mi sit amet venenatis. Donec erat augue, cursus at dui at, ornare cursus eros. Quisque dolor lacus, consectetur a suscipit facilisis, hendrerit a mauris. Suspendisse at tempus sapien, ac ullamcorper neque. Donec viverra arcu mauris, in dapibus est rhoncus non.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                jdnqwlkdnqwjldn: kqwdindniwdqw
+            <p>
+                <b>Brief</b><br>
+                My master thesis was focused on the analysis of a driver behaviour when distracted by mobile communication
+                using eye tracking. I created a driving simulation in Unity, that exposes driver to
+                to dangerous road situations based on the information obtained from eye tracker. The aim was to compare driver's
+                reaction time when distracted by mobile device and head-up display.
 
             </p>
+            <p>
+                <b>Process</b> <br>
+                Analyze domain -> Design proposal -> 3D models -> Tobii SDK -> Script for the simulation -> Critical situations -> Testing -> Analyze data
+            </p>
+            <p>
+                <b>Challenges</b> <br>
+                Critical situations invoked during driving were the most important part of the case study itself.
+                Easy extensibility of new critical situations in the future was one of the highest priorities,
+                so I used State Machine design pattern that allows programmer to add new situations as easy as adding a new state.
+                The transition between states was in most cases triggered by the driver's gaze.
+                I used Tobii EyeX eyetracker for simulation.
+            </p>
+
             <h6>Simulator</h6>
             <h6>Tobii eyetracker</h6>
             <h6>Unity</h6>
@@ -102,13 +116,13 @@
         </div>
     </div>
 
-    <div class="screenshots"><h4>User Interface</h4>
-        <img  src="images/screens/eshop/homepage.png" alt="My photo">
-        <img  src="images/screens/eshop/allProducts.png" alt="My photo">
-        <img  src="images/screens/eshop/detail.png" alt="My photo">
-        <img  src="images/screens/eshop/order1.png" alt="My photo">
-        <img  src="images/screens/eshop/order2.png" alt="My photo">
-        <img  src="images/screens/eshop/order3.png" alt="My photo">
+    <div class="screenshots">
+        <h4>Start of the simulation</h4>
+        <img  src="images/screens/dp/start.png" alt="My photo">
+        <h4>Critical situations</h4>
+        <img  src="images/screens/dp/wolf.png" alt="My photo">
+        <img  src="images/screens/dp/bryce.png" alt="My photo">
+        <img  src="images/screens/dp/megan.png" alt="My photo">
     </div>
 
 </main>
