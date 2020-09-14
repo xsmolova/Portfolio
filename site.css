@@ -716,9 +716,16 @@ main{
     height: auto;
 }
 
-.arrow{
-    width: 20%;
-    height: 20%;
+.credits{
+    font-size: 10px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+.credits a {
+    font-size: inherit;
+    text-decoration: underline;
+    color: white;
 }
 
 .project-banner{
@@ -1167,7 +1174,11 @@ main{
     }
     .footer h2{color: black}
 
-
+    .credits a {
+        font-size: inherit;
+        text-decoration: underline;
+        color: white;
+    }
     .project-banner-content__background-text h1{
         font-size: 16vw;
     }
