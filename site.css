@@ -853,8 +853,12 @@ main{
 
 /* MOBILE */
 @media (max-width: 812px){
+    html{overflow-x: hidden}
     body{
         cursor: auto;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
     .nav-item{
         margin-right: 16px;
@@ -875,7 +879,7 @@ main{
         height: 100%;
         position: relative;
         text-align: center;
-        padding: 20% 0 0 0;
+        padding: 2.8rem 0 0 0;
     }
     .banner-content__text>p{
         text-align: center;
@@ -891,7 +895,7 @@ main{
         margin: auto;
     }
     .banner-content__text--small p{
-        width: 80%;
+        width: 90%;
         text-align: center;
         margin: auto;
     }
@@ -939,7 +943,7 @@ main{
         scroll-snap-align: none;
     }
     .interest{
-        height: 30vh;
+        height: auto;
         width: 100%;
         text-align: center;
         position: relative;
@@ -964,6 +968,9 @@ main{
     .face div{
         display: inline-block;
         width: 80%;
+    }
+    .face.front{
+        margin-bottom: 1rem;
     }
     .face.back p{
         text-align: justify;
@@ -996,6 +1003,9 @@ main{
         position: relative;
         top:0;
         left:0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
     }
     .resume__caption{
         right: 0;
@@ -1023,7 +1033,7 @@ main{
         position: relative;
         transform: none !important;
         height: auto;
-        margin-bottom: 400px;
+        margin-bottom: 300px;
     }
     .horizontal-scroll-container section{
         transform:translateX(0%);
@@ -1090,6 +1100,9 @@ main{
     }
     .single-item-content__image img{
         margin-bottom: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
     }
     .single-item-content__image img:hover{transform: none;}
 
@@ -1108,4 +1121,11 @@ main{
     .footer h2{color: black}
 }
 
+@media (max-width: 350px) {
+    .banner-content__photo img{
+        width: 90vw;
+        max-width: 100vw;
+        height: auto;
+    }
+}
 
