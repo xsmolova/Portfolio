@@ -244,16 +244,16 @@ p{
 
     animation-iteration-count: 1;
     animation-fill-mode: both;
-
 }
+
 .banner-content__photo{
     width:100vw;
     height: 100%;
     overflow: visible;
 }
 .banner-content__photo img{
-    max-width: 50%;
-    width: 37vw;
+    max-width: 600px;
+    width: 60vw;
     height: auto;
     position: absolute;
     margin: auto;
@@ -457,7 +457,8 @@ p{
     text-align: center;
 }
 
-.resume__caption h2{
+.resume__caption h4{
+    font-weight: bold;
     text-align: center;
     position: relative;
     color: #e2e2e2;
@@ -652,10 +653,6 @@ p{
     -moz-box-shadow: 10px 21px 33px -4px rgba(94,94,94,0.69);
     box-shadow: 10px 21px 33px -4px rgba(94,94,94,0.69);
 }
-
-.single-item-content__image:hover{
-    transform: scale(1.1);
-}
 main{
     position: relative;
     -webkit-transform: translate3d(0,0,0);
@@ -724,6 +721,10 @@ main{
     height: 20%;
 }
 
+.project-banner{
+    height: auto;
+    position: relative;
+}
 .project-banner-content{
     width: 100vw;
     max-width: 100vw;
@@ -750,7 +751,6 @@ main{
 .project-title div h1{
     position: relative;
     text-align: center;
-    font-size: 3vw;
     padding: 1rem;
     wrap-option: wrap;
     height: auto;
@@ -848,16 +848,59 @@ main{
 
 }
 
+@media (min-width: 813px) and (max-width: 1090px){
+    .banner-content__photo img{
+        width: 50vw;
+    }
+    .triangle--right{
+        width: 100%;
+        height: 60%;
+    }
+    .banner-content__text{
+        padding-top: 20%;
+    }
+    .banner-content__text button{
+        width: auto;
+    }
+    .interests-wrapper{
+        grid-template-columns: repeat(3, 25vw);
+    }
+    .resume__caption{
+        max-width: 30%;
+        right:0;
+        left: 58%;
+        margin: auto;
+    }
+    .resume__caption button{
+        width: auto;
+    }
+    .single-item-content__text div h1{
+        font-size: 30px;
+    }
+    .single-item-content__text div h6{
+        font-size: 11px;
+    }
+    .single-item-content__text div p{
+        width: 90%;
+    }
 
+}
 
 /* MOBILE */
 @media (max-width: 812px){
-    html{overflow-x: hidden}
+   html{
+       max-width: 100%;
+       overflow-x: hidden;
+       height: 100%;
+   }
     body{
+        max-width: 100%;
         cursor: auto;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
+    }
+    main{
+        margin-bottom: 300px;
     }
     .nav-item{
         margin-right: 16px;
@@ -1035,7 +1078,6 @@ main{
         position: relative;
         transform: none !important;
         height: auto;
-        margin-bottom: 300px;
     }
     .horizontal-scroll-container section{
         transform:translateX(0%);
@@ -1092,6 +1134,9 @@ main{
         width: 90%;
         margin: auto;
     }
+    .single-item-content__text h6{
+        margin:0.4rem;
+    }
     .single-item-content__image{
         position: relative;
         width:80vw;
@@ -1109,7 +1154,7 @@ main{
     .single-item-content__image img:hover{transform: none;}
 
     .footer{
-        height: 40vh;
+        height: 200px;
         bottom:0;
         color: black;
         z-index: 2;
@@ -1121,8 +1166,31 @@ main{
         position: relative;
     }
     .footer h2{color: black}
-}
 
+
+    .project-banner-content__background-text h1{
+        font-size: 16vw;
+    }
+    .project-title div{
+        width: 70%;
+    }
+    .project-title div h1{
+        font-size: 30px;
+    }
+    .project-about-text div h6{
+        margin:0.3rem;
+    }
+
+    .video{
+        max-width: 90%;
+    }
+}
+@media (min-width: 560px) and (max-width: 812px){
+    .banner-content__photo img{
+        width: 60vw;
+        height: auto;
+    }
+}
 @media (max-width: 350px) {
     .banner-content__photo img{
         width: 90vw;
