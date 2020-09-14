@@ -68,7 +68,6 @@ p{
     fill: black;
 }
 .cursor__ball--big circle {
-
     fill: lightgray;
 }
 
@@ -701,12 +700,14 @@ main{
 .footer-text h2{
     text-align: center;
     padding-top: 3rem;
-    color:white
+    color:white;
 }
 .footer-text a{
     text-decoration: underline;
-
+    width: auto;
     display:block;
+    height: auto;
+    padding: 1rem;
     text-align: center;
     font-weight: bold;
     font-size: 19px;
@@ -895,6 +896,9 @@ main{
         text-align: center;
         margin: auto;
     }
+    .banner-content__text--small p>a{
+        color: white;
+    }
     .banner-content__text h1{
         width: 100%;
     }
@@ -954,6 +958,9 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
     }
     .face div{
         display: inline-block;

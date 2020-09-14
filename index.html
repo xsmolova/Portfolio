@@ -85,7 +85,7 @@
                        <a class="hoverable" href="http://www.fiit.stuba.sk/" target="_blank">FIIT STU</a>,
                        I love to code and design applications.
                        I would love to participate in new and exciting projects! <br><br>
-                       So check out my website or just:
+                       <p data-aos="fade-up" data-aos-delay="1400" data-aos-duration="700" class="hidden-for-mobile">So check out my website or just:</p>
                    </p>
                    <div class="hidden-for-mobile">
                        <a href="mailto:smolova.alexandra@gmail.com?body=You are hired!">
@@ -382,7 +382,10 @@
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
+    AOS.init({disable: function() {
+            var maxWidth = 812;
+            return window.innerWidth < maxWidth;
+        }});
 </script>
 
 </body>
