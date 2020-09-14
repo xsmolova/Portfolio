@@ -368,7 +368,6 @@ p{
     width: 100%;
     height: 100%;
     border-radius: 7px;
-    mix-blend-mode: color-dodge;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -961,9 +960,12 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
+        color:black;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
+        transition: none;
+
     }
     .face div{
         display: inline-block;
