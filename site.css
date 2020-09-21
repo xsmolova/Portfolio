@@ -442,6 +442,7 @@ p{
     height: 100%;
     width: 100%;
     background-color: transparent;
+    -webkit-transform: translateZ(-1000px);
 }
 
 
