@@ -362,7 +362,6 @@ p{
     align-items: center;
     transform-style: preserve-3d;
     -webkit-transform: translate3d(0, 0, 0);
-    z-index: 0;
 }
 
 .interest .face{
