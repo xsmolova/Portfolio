@@ -441,7 +441,7 @@ p{
 .interest>div{
     height: 100%;
     width: 100%;
-    background-color: transparent;
+    z-index:3;
     -webkit-transform: translateZ(-1000px);
 }
 
