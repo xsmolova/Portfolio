@@ -44,7 +44,7 @@ h2{
 h3{
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-size: 21px;
+    font-size: 19px;
     font-weight: bold;
 }
 p{
@@ -348,7 +348,7 @@ p{
     width: 100vw;
     height:35vh;
     display: grid;
-    grid-template-columns: repeat(3, 20vw);
+    grid-template-columns: repeat(3, 21vw);
     justify-content: center;
     position: relative;
     grid-gap: 3rem;
@@ -361,6 +361,8 @@ p{
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);
+    z-index: 0;
 }
 
 .interest .face{
@@ -428,7 +430,7 @@ p{
     -o-transform: perspective(500px) rotateY(360deg);
 }
 .interest div>*{
-    width: 90%;
+    width: 80%;
     margin: auto;
     font-weight: bold;
 }
@@ -925,6 +927,12 @@ main{
     }
     .interests-wrapper{
         grid-template-columns: repeat(3, 25vw);
+    }
+    .interest div>* {
+        font-size: 14px;
+    }
+    .interest .face.back div p{
+        font-size: 12px;
     }
     .resume__caption{
         max-width: 30%;
