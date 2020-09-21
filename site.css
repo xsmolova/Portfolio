@@ -334,6 +334,7 @@ p{
     box-shadow: none;
 }
 .rectangle{
+    z-index: 0;
     background-color: #ffffff;
     width: 100vw;
     height: 50vh;
