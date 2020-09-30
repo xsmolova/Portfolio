@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Portfolio - Ing. Alexandra Smolová</title>
 
     <!-- COLOR OF HEADER BAR -->
@@ -19,9 +18,10 @@
     <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="site.css" rel="stylesheet">
-
 </head>
+
 <body class="body__white" data-spy="scroll" data-target="#navigation" data-offset="0">
+
 <!-- Cursor -->
 <div class="cursor hidden-for-mobile">
     <div class="cursor__ball cursor__ball--big ">
@@ -36,28 +36,30 @@
         </svg>
     </div>
 </div>
-<!-- Scroll bar -->
-
 
 <!-- HEADER AND NAV -->
 <nav class="navbar navbar-expand-sm bg-transparent w-100 d-flex ">
     <ul class="navbar-nav mr-auto flex-row">
-        <li class="ml-3 nav-item"><a class="nav-link hoverable" href="https://www.linkedin.com/in/alexandra-smolova-3488a3103"><img src="icons/linkedin1.svg" class="d-inline-block align-top icon" alt="Linked-in icon"></a></li>
-        <li class="nav-item"><a class="nav-link hoverable" href="mailto:smolova.alexandra@gmail.com"><img src="icons/email1.svg" class="d-inline-block align-top icon" alt="E-mail icon"></a></li>
+        <li class="ml-3 nav-item"><a class="nav-link hoverable"
+                                     href="https://www.linkedin.com/in/alexandra-smolova-3488a3103"><img
+                src="icons/linkedin1.svg" class="d-inline-block align-top icon" alt="Linked-in icon"></a></li>
+        <li class="nav-item"><a class="nav-link hoverable" href="mailto:smolova.alexandra@gmail.com"><img
+                src="icons/email1.svg" class="d-inline-block align-top icon" alt="E-mail icon"></a></li>
     </ul>
     <ul class="navbar-nav ml-auto flex-row">
         <!-- MENU ICON for mobile -->
         <li class="mr-3 nav-item p-auto">
-        <a id="js-nav-menu" class="nav-link hoverable" href="#!" title="Menu">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </a></li>
+            <a id="js-nav-menu" class="nav-link hoverable" href="#!" title="Menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a></li>
     </ul>
 </nav>
+
 <!-- NAV for mobile -->
 <nav id="nav">
-    <div class="nav-menu" >
+    <div class="nav-menu">
         <ul class="nav__vertical-line" id="navigation">
             <li><a href="#Top" class="nav-link hoverable">Home</a></li>
             <li><a href="#About" class="nav-link hoverable">About me</a></li>
@@ -66,46 +68,49 @@
         </ul>
     </div>
 </nav>
+
 <!-- MAIN -->
 <main>
-    <!-- BANNER -->
 
+    <!-- BANNER -->
     <div id="Top" class="banner">
         <div class="banner-content snap-here" id="js-banner">
             <div class="triangle triangle--right"></div>
             <div data-speed="-1" class="banner-content__text">
-               <p data-aos="flip-up" data-aos-duration="800">HELLO! My name is</p>
-               <h1 data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">Alexandra Smolová</h1>
-               <div class="banner-content__text--small">
-                   <p data-aos="fade-up" data-aos-delay="1400" data-aos-duration="700" >
-                       I’m a software engineer based in Bratislava, Slovakia. I graduated from
-                       <a class="hoverable" href="http://www.fiit.stuba.sk/" target="_blank">FIIT STU</a>,
-                       I like to code and design applications.
-                       I would love to participate in new and exciting projects! <br><br>
-                       <p data-aos="fade-up" data-aos-delay="1400" data-aos-duration="700" class="hidden-for-mobile">So check out my website or just:</p>
-                   </p>
-                   <div class="hidden-for-mobile">
-                       <a href="mailto:smolova.alexandra@gmail.com?body=You are hired!">
-                       <button  data-aos="zoom-in"  data-aos-delay="2100" data-aos-duration="700"
-                                type="button" class=" btn-lg button hoverable">
-                           HIRE ME!
-                       </button></a>
-                   </div>
-               </div>
+                <p data-aos="flip-up" data-aos-duration="800">HELLO! My name is</p>
+                <h1 data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">Alexandra Smolová</h1>
+                <div class="banner-content__text--small">
+                    <p data-aos="fade-up" data-aos-delay="1400" data-aos-duration="700">
+                        I’m a software engineer based in Bratislava, Slovakia. I graduated from
+                        <a class="hoverable" href="http://www.fiit.stuba.sk/" target="_blank">FIIT STU</a>,
+                        I like to code and design applications.
+                        I would love to participate in new and exciting projects! <br><br>
+                    <p data-aos="fade-up" data-aos-delay="1400" data-aos-duration="700" class="hidden-for-mobile">So
+                        check out my website or just:</p>
+                    </p>
+                    <div class="hidden-for-mobile">
+                        <a href="mailto:smolova.alexandra@gmail.com?body=You are hired!">
+                            <button data-aos="zoom-in" data-aos-delay="2100" data-aos-duration="700"
+                                    type="button" class=" btn-lg button hoverable">
+                                HIRE ME!
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
             <h1 data-aos="fade-up" data-aos-duration="800" class="banner__background-text">#DEVELOPER</h1>
             <div data-speed="-1" class="banner-content__photo">
-               <img data-aos="fade-left" data-aos-duration="2800" src="images/photo1.png" alt="Photo of Alexandra Smolova">
+                <img data-aos="fade-left" data-aos-duration="2800" src="images/photo1.png"
+                     alt="Photo of Alexandra Smolova">
             </div>
         </div>
     </div>
 
     <!-- ABOUT ME -->
-
-        <div id="About" data-aos="fade-up" data-aos-duration="1000" class="snap-here rectangle">
-            <div  class="interests-wrapper">
-                <div class="interest snap-here-start" >
-                    <div>
+    <div id="About" data-aos="fade-up" data-aos-duration="1000" class="snap-here rectangle">
+        <div class="interests-wrapper">
+            <div class="interest snap-here-start">
+                <div>
                     <div class="face front hoverable">
                         <div>
                             <img src="icons/proportions.svg" class="icon--big" alt="Design icon">
@@ -123,9 +128,9 @@
                         </div>
                     </div>
                 </div>
-                </div>
-                <div class="interest snap-here-start" >
-                    <div>
+            </div>
+            <div class="interest snap-here-start">
+                <div>
                     <div class="face front hoverable">
                         <div>
                             <img src="icons/code%20(1).svg" class="icon--big" alt="Code icon">
@@ -135,16 +140,17 @@
                     <div class="face back">
                         <div>
                             <p>
-                                I have been programming for 5 years and writing easy-to-read and extensible code is a priority for me.
+                                I have been programming for 5 years and writing easy-to-read and extensible code is a
+                                priority for me.
                                 I am interested in the development of web as well as desktop applications.
                                 I also love to work with extended reality (XR) technologies.
                             </p>
                         </div>
                     </div>
-                    </div>
                 </div>
-                <div class="interest snap-here-start" >
-                    <div>
+            </div>
+            <div class="interest snap-here-start">
+                <div>
                     <div class="face front hoverable">
                         <div>
                             <img src="icons/bird2.svg" class="icon--big" alt="Origami icon">
@@ -153,203 +159,222 @@
                     </div>
                     <div class="face back">
                         <div>
-                           <p>
-                               Creating something new is always exciting for me. My favorite feeling is when something that
-                               starts as a simple idea takes shape and form. Besides creating applications and developing
-                               games, I also love to paint in my free time.
-                           </p>
+                            <p>
+                                Creating something new is always exciting for me. My favorite feeling is when something
+                                that
+                                starts as a simple idea takes shape and form. Besides creating applications and
+                                developing
+                                games, I also love to paint in my free time.
+                            </p>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-<section>
+    <!-- RESUME -->
+    <section>
         <div class="snap-here resume">
             <div data-aos="fade-up" data-aos-duration="1000" class="resume__background-image">
-                <img  src="images/titlephoto.jpg" alt="Notebook, phone, glasses and plants on table">
+                <img src="images/titlephoto.jpg" alt="Notebook, phone, glasses and plants on table">
 
             </div>
             <div class="resume__background">
                 <div class="resume__caption">
-                    <h4 data-aos="fade-up" data-aos-duration="800" >
+                    <h4 data-aos="fade-up" data-aos-duration="800">
                         Check out my resume!
                     </h4>
-                    <button data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" class=" btn-lg button hoverable">
-                        <a href="files/cv_eng.pdf" target="_blank" >Download pdf</a>
+                    <button data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"
+                            class=" btn-lg button hoverable">
+                        <a href="files/cv_eng.pdf" target="_blank">Download pdf</a>
                     </button>
                 </div>
             </div>
         </div>
-</section>
-<section id="Projects"></section>
-    <h1 class="projects__background-text-x hidden-for-pc">PROJECTS</h1>
-                    <div class=" horizontal-scroll-container" id="js-horizontal-scroll">
-                        <section class="hs-content scroll-left" id="js-horizontal-scroll-content"><h1 class="scroll-right projects__background-text">PROJECTS</h1>
-                        <div class="single-item">
-                            <div data-depth-hor="-3" data-direction="left">
-                                <div class="single-item-content snap-here snap-here-start">
-                                    <div class="single-item-content__text">
-                                        <div>
-                                            <h3>01. E-shop</h3>
-                                            <h1>TheWatch - Online Shop for Watches</h1>
-                                            <h6>HTML5</h6>
-                                            <h6>CSS3</h6>
-                                            <h6>JS</h6>
-                                            <h6>PHP</h6>
-                                            <h6>Laravel</h6>
-                                            <h6>PostgreSQL</h6>
-                                            <p>
-                                                The online shop for watches was my first website. The creation process consisted of designing a data model,
-                                                wireframes and subsequent frontend and backend programming. I used the relational database PostgreSQL,
-                                                which was connected to the backend via the PHP framework - Laravel.
-                                                The site offers user registration and consists of a user as well as an admin interface.
-                                            </p>
-                                            <a href="project-eshop.html">
-                                                <button class="btn-sm button hoverable">View more</button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="single-item-content__image">
-                                        <img src="images/eshop.png" alt="Screenshot of e-shop web page">
-                                    </div>
+    </section>
 
-                                </div>
+    <!-- PROJECTS - HORIZONTAL SCROLLER -->
+    <section id="Projects"></section>
+    <h1 class="projects__background-text-x hidden-for-pc">PROJECTS</h1>
+    <div class=" horizontal-scroll-container" id="js-horizontal-scroll">
+        <section class="hs-content scroll-left" id="js-horizontal-scroll-content"><h1
+                class="scroll-right projects__background-text">PROJECTS</h1>
+            <div class="single-item">
+                <div data-depth-hor="-3" data-direction="left">
+                    <div class="single-item-content snap-here snap-here-start">
+                        <div class="single-item-content__text">
+                            <div>
+                                <h3>01. E-shop</h3>
+                                <h1>TheWatch - Online Shop for Watches</h1>
+                                <h6>HTML5</h6>
+                                <h6>CSS3</h6>
+                                <h6>JS</h6>
+                                <h6>PHP</h6>
+                                <h6>Laravel</h6>
+                                <h6>PostgreSQL</h6>
+                                <p>
+                                    The online shop for watches was my first website. The creation process consisted of
+                                    designing a data model,
+                                    wireframes and subsequent frontend and backend programming. I used the relational
+                                    database PostgreSQL,
+                                    which was connected to the backend via the PHP framework - Laravel.
+                                    The site offers user registration and consists of a user as well as an admin
+                                    interface.
+                                </p>
+                                <a href="project-eshop.html">
+                                    <button class="btn-sm button hoverable">View more</button>
+                                </a>
                             </div>
                         </div>
-                        <div class="single-item ">
-                            <div data-depth-hor="-3" data-direction="left">
-                                <div class="single-item-content snap-here-start">
-                                    <div class="single-item-content__text ">
-                                        <div>
-                                            <h3>
-                                                02. Neuroevolution
-                                            </h3>
-                                            <h1>
-                                                Neuroevolution for Flappy Bird game
-                                            </h1>
-                                            <h6>Machine Learning</h6>
-                                            <h6>ANN</h6>
-                                            <h6>RL</h6>
-                                            <h6>GA</h6>
-                                            <h6>Unity</h6>
-                                            <h6>C#</h6>
-                                            <p>
-                                                After I took a <a class="hoverable" href="https://www.udemy.com/course/machine-learning-with-unity/" target="_blank">machine learning course</a>,
-                                                I worked on the development of a neural network in C#. I recreated a popular Flappy Bird game in Unity
-                                                and the behavior of each bird was controlled by a neural network. The aim was to compare the speed and efficiency
-                                                of learning curve in the case of ANN, but also ANN with reinforcement learning. I further optimized these neural
-                                                networks with genetic algorithm.
-                                            </p>
-                                            <a href="project-ann.html">
-                                                <button class="btn-sm button hoverable">View more</button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="single-item-content__image">
-                                        <img src="images/str.png" alt="Structure of neural network">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="single-item-content__image">
+                            <img src="images/eshop.png" alt="Screenshot of e-shop web page">
                         </div>
-                        <div class="single-item">
-                            <div data-depth-hor="-3" data-direction="left">
-                                <div class="single-item-content snap-here-start" >
-                                    <div class="single-item-content__text">
-                                        <div>
-                                            <h3>
-                                                03. Driving Simulation
-                                            </h3>
-                                            <h1>
-                                                Analysis of Driver Using Eye Tracking
-                                            </h1>
-                                            <h6>Simulator</h6>
-                                            <h6>Tobii eyetracker</h6>
-                                            <h6>Unity</h6>
-                                            <h6>C#</h6>
-                                            <p>
-                                                My master thesis was focused on the analysis of a driver behaviour when distracted by mobile communication
-                                                using eye tracking. I created a driving simulation in Unity, that exposes driver to
-                                                to dangerous road situations based on the information obtained from eye tracker. The aim was to compare driver's
-                                                reaction time when distracted by mobile device and head-up display.
-                                            </p>
-                                            <a href="project-dp.html">
-                                                <button class="btn-sm button hoverable">View more</button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="single-item-content__image">
-                                        <img src="images/auto4.jpg" alt="Screenshot from driving simulator">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <div data-depth-hor="-3" data-direction="left">
-                                <div class="single-item-content snap-here-start">
-                                    <div class="single-item-content__text">
-                                        <div>
-                                            <h3>04. MAR Application</h3>
-                                            <h1>StellAR – Augmented Reality in E-learning</h1>
-                                            <h6>iOS</h6>
-                                            <h6>AR</h6>
-                                            <h6>Vuforia</h6>
-                                            <h6>X-Code</h6>
-                                            <h6>Unity</h6>
-                                            <h6>C#</h6>
-                                            <p>
-                                                The StellAR application was the result of my bachelor's study.
-                                                The aim of the application was to educate students about the solar system. I chose to develop on the iOS platform
-                                                and I used Ground Plane detection from Vuforia. StellAR is a mobile augmented reality (MAR)
-                                                application which can be used both inside and outside the classroom.
-                                            </p>
-                                            <a href="project-bc.html">
-                                                <button class="btn-sm button hoverable">View more</button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="single-item-content__image">
-                                        <img src="images/stellar.jpg" alt="Screenshot from StellAR app">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <div data-depth-hor="-3" data-direction="left">
-                                <div class="single-item-content snap-here-start">
-                                    <div class="single-item-content__text">
-                                        <div>
-                                            <h3>05. Indie Game</h3>
-                                            <h1>Moth</h1>
-                                            <h6>Unity</h6>
-                                            <h6>C#</h6>
-                                            <h6>Blender</h6>
-                                            <p>
-                                                Indie game Moth was created as a collaboration with Ing. Kristína Macková.
-                                                The aim of the game is to hunt down a cryptid - Mothman and take a photo as a proof of its existence.
-                                                First we designed the Game Design Document, where we defined details about the gameplay and game mechanics.
-                                                Then we started developing the horror game Moth inspired by Slender.
-                                                I also tried 3D modelling in Blender and made Mothman model for the game myself.
-                                            </p>
-                                            <a href="project-moth.html">
-                                                <button class="btn-sm button hoverable">View more</button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="single-item-content__image">
-                                        <img src="images/moth1.png" alt="Screenshot from MOTH">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </section>
+
                     </div>
+                </div>
+            </div>
+            <div class="single-item ">
+                <div data-depth-hor="-3" data-direction="left">
+                    <div class="single-item-content snap-here-start">
+                        <div class="single-item-content__text ">
+                            <div>
+                                <h3>
+                                    02. Neuroevolution
+                                </h3>
+                                <h1>
+                                    Neuroevolution for Flappy Bird game
+                                </h1>
+                                <h6>Machine Learning</h6>
+                                <h6>ANN</h6>
+                                <h6>RL</h6>
+                                <h6>GA</h6>
+                                <h6>Unity</h6>
+                                <h6>C#</h6>
+                                <p>
+                                    After I took a <a class="hoverable"
+                                                      href="https://www.udemy.com/course/machine-learning-with-unity/"
+                                                      target="_blank">machine learning course</a>,
+                                    I worked on the development of a neural network in C#. I recreated a popular Flappy
+                                    Bird game in Unity
+                                    and the behavior of each bird was controlled by a neural network. The aim was to
+                                    compare the speed and efficiency
+                                    of learning curve in the case of ANN, but also ANN with reinforcement learning. I
+                                    further optimized these neural
+                                    networks with genetic algorithm.
+                                </p>
+                                <a href="project-ann.html">
+                                    <button class="btn-sm button hoverable">View more</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single-item-content__image">
+                            <img src="images/str.png" alt="Structure of neural network">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-item">
+                <div data-depth-hor="-3" data-direction="left">
+                    <div class="single-item-content snap-here-start">
+                        <div class="single-item-content__text">
+                            <div>
+                                <h3>
+                                    03. Driving Simulation
+                                </h3>
+                                <h1>
+                                    Analysis of Driver Using Eye Tracking
+                                </h1>
+                                <h6>Simulator</h6>
+                                <h6>Tobii eyetracker</h6>
+                                <h6>Unity</h6>
+                                <h6>C#</h6>
+                                <p>
+                                    My master thesis was focused on the analysis of a driver behaviour when distracted
+                                    by mobile communication
+                                    using eye tracking. I created a driving simulation in Unity, that exposes driver to
+                                    to dangerous road situations based on the information obtained from eye tracker. The
+                                    aim was to compare driver's
+                                    reaction time when distracted by mobile device and head-up display.
+                                </p>
+                                <a href="project-dp.html">
+                                    <button class="btn-sm button hoverable">View more</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single-item-content__image">
+                            <img src="images/auto4.jpg" alt="Screenshot from driving simulator">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-item">
+                <div data-depth-hor="-3" data-direction="left">
+                    <div class="single-item-content snap-here-start">
+                        <div class="single-item-content__text">
+                            <div>
+                                <h3>04. MAR Application</h3>
+                                <h1>StellAR – Augmented Reality in E-learning</h1>
+                                <h6>iOS</h6>
+                                <h6>AR</h6>
+                                <h6>Vuforia</h6>
+                                <h6>X-Code</h6>
+                                <h6>Unity</h6>
+                                <h6>C#</h6>
+                                <p>
+                                    The StellAR application was the result of my bachelor's study.
+                                    The aim of the application was to educate students about the solar system. I chose
+                                    to develop on the iOS platform
+                                    and I used Ground Plane detection from Vuforia. StellAR is a mobile augmented
+                                    reality (MAR)
+                                    application which can be used both inside and outside the classroom.
+                                </p>
+                                <a href="project-bc.html">
+                                    <button class="btn-sm button hoverable">View more</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single-item-content__image">
+                            <img src="images/stellar.jpg" alt="Screenshot from StellAR app">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-item">
+                <div data-depth-hor="-3" data-direction="left">
+                    <div class="single-item-content snap-here-start">
+                        <div class="single-item-content__text">
+                            <div>
+                                <h3>05. Indie Game</h3>
+                                <h1>Moth</h1>
+                                <h6>Unity</h6>
+                                <h6>C#</h6>
+                                <h6>Blender</h6>
+                                <p>
+                                    Indie game Moth was created as a collaboration with Ing. Kristína Macková.
+                                    The aim of the game is to hunt down a cryptid - Mothman and take a photo as a proof
+                                    of its existence.
+                                    First we designed the Game Design Document, where we defined details about the
+                                    gameplay and game mechanics.
+                                    Then we started developing the horror game Moth inspired by Slender.
+                                    I also tried 3D modelling in Blender and made Mothman model for the game myself.
+                                </p>
+                                <a href="project-moth.html">
+                                    <button class="btn-sm button hoverable">View more</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single-item-content__image">
+                            <img src="images/moth1.png" alt="Screenshot from MOTH">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
 </main>
-
-
 
 
 <!-- FOOTER -->
@@ -362,14 +387,12 @@
             <a class="hoverable" href="mailto:smolova.alexandra@gmail.com">smolova.alexandra@gmail.com</a>
         </div>
         <div class="credits">
-            Icons made by <a class="hoverable" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a class="hoverable" href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+            Icons made by <a class="hoverable" href="https://www.flaticon.com/authors/freepik"
+                             title="Freepik">Freepik</a> from <a class="hoverable" href="https://www.flaticon.com/"
+                                                                 title="Flaticon"> www.flaticon.com</a>
         </div>
-        </div>
+    </div>
 </footer>
-
-
-
-
 
 
 <!-- SCRIPTS -->
@@ -382,10 +405,12 @@
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init({disable: function() {
+    AOS.init({
+        disable: function () {
             var maxWidth = 812;
             return window.innerWidth < maxWidth;
-        }});
+        }
+    });
     window.addEventListener('load', AOS.refresh);
 </script>
 
