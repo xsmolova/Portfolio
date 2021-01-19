@@ -253,8 +253,8 @@ p{
 }
 .banner-content__photo img{
     max-width: 600px;
-    width: 60vw;
-    height: auto;
+    width: auto;
+    height: 100%;
     position: absolute;
     margin: auto;
     bottom: 0;
@@ -916,7 +916,9 @@ main{
 
 @media (min-width: 813px) and (max-width: 1090px){
     .banner-content__photo img{
-        width: 50vw;
+        max-width: 50vw;
+        height: auto;
+        max-height: 100%;
     }
     .triangle--right{
         width: 100%;
