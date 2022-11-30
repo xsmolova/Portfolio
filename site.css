@@ -254,7 +254,7 @@ p{
 .banner-content__photo img{
     max-width: 600px;
     width: auto;
-    height: 100%;
+    height: auto;
     position: absolute;
     margin: auto;
     bottom: 0;
